@@ -1,9 +1,130 @@
 body {
-  min-width: 280px;
+  min-width: 300px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .club-en-presence {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .club-en-presence {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 800px) {
+  .club-en-presence {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 700px) {
+  .club-en-presence {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 600px) {
+  .club-en-presence {
+    font-size: 19px;
+  }
+  .text-num-licence {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .club-en-presence {
+    font-size: 16px;
+  }
+
+  .text-num-licence {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .club-en-presence {
+    font-size: 14px;
+  }
+
+  .equipe-recevante {
+    font-size: 16px;
+  }
+
+  .text-num-licence {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 300px) {
+  .club-en-presence {
+    font-size: 12px;
+  }
+
+  .text-num-licence {
+    font-size: 11px;
+  }
+}
+
+/* // */
+
+@media (min-width: 149.98px) {
+  body {
+    /* background-color: rgb(230, 255, 255); */
+  }
+
+  .nom-joueur-head {
+    border-top-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+  }
+  .nom-joueur {
+    border-top-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+  }
+  .num-joueur-head,
+  .num-joueur {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-width: 1px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    /* background-color: rgb(255, 255, 223); */
+  }
+  .nom-joueur-head,
+  .nom-joueur {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-right-width: 1px !important;
+  }
+  .num-joueur-head,
+  .num-joueur {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    /* background-color: rgb(255, 228, 234); */
+  }
 }
