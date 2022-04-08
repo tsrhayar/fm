@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(`#joueurs-${type}`).html("");
     for (let i = 0; i < nombre; i++) {
       $(`#joueurs-${type}`).append(`
-                <div ${i == 10 ? "class=mb-2": ""}>
+                <div ${i == 10 ? "class=mb-2" : ""} >
                     <div class="row border border-dark">
                     <div
                         class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur"
@@ -26,7 +26,7 @@ $(document).ready(function () {
     $(`#accompagnanteurs-${type}`).html("");
     for (let i = 0; i < nombre; i++) {
       $(`#accompagnanteurs-${type}`).append(`
-                <div ${i == 10 ? "class=mb-2": ""}>
+                <div ${i == 10 ? "class=mb-2" : ""}>
                     <div class="row border border-dark">
                     <div
                         class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur"
@@ -49,8 +49,8 @@ $(document).ready(function () {
   tableauJoueur("recevante", 20);
   tableauJoueur("visiteuse", 20);
 
-  tableauAccompagnateurs("recevante", 7)
-  tableauAccompagnateurs("visiteuse", 7)
+  tableauAccompagnateurs("recevante", 7);
+  tableauAccompagnateurs("visiteuse", 7);
 
   $("input").keyup(function () {
     this.value = this.value.toLocaleUpperCase();
