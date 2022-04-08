@@ -8,8 +8,15 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.joueurs > div:nth-child(even) {
+.joueurs-recevante > div:nth-child(even) > div {
   background-color: #dee2e6;
+}
+.joueurs-visiteuse > div:nth-child(odd) > div {
+  background-color: #dee2e6;
+}
+
+.flc:first-letter {
+  text-transform: capitalize;
 }
 
 @media (max-width: 1000px) {
