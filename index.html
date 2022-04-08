@@ -99,11 +99,11 @@
         <div class="col-12 col-md-6 order-2 order-md-1">
           <div class="row">
             <div class="col-5">
-              <input class="text-center w-100" type="text" />
+              <input class="text-center w-100" type="text" placeholder="Equipe recevante" />
             </div>
-            <div class="col-2 text-center"><b class="h4">#</b></div>
+            <div class="col-2 d-flex"><b class="h4 m-auto"></b></div>
             <div class="col-5">
-              <input class="text-center w-100" type="text" />
+              <input class="text-center w-100" type="text" placeholder="Equipe visiteuse" />
             </div>
           </div>
           <div class="row">
@@ -111,22 +111,24 @@
               <div class="row">
                 <div class="col-12">Resultat:</div>
                 <div class="col-6">
-                  <input class="w-100 text-center" type="number" />
+                  <input class="w-100 text-center" type="number" placeholder="Chiffre" />
                 </div>
                 <div class="col-6">
-                  <input class="w-100 text-center" type="text" />
+                  <input class="w-100 text-center" type="text" placeholder="Lettre" />
                 </div>
               </div>
             </div>
-            <div class="col-2"><b class="h4">#</b></div>
+            <div class="col-2 d-flex flex-column">
+              <b class="h4 mx-auto">#</b>
+            </div>
             <div class="col-5">
               <div class="row">
                 <div class="col-12">Resultat:</div>
                 <div class="col-6">
-                  <input class="w-100 text-center" type="number" />
+                  <input class="w-100 text-center" type="number" placeholder="Chiffre" />
                 </div>
                 <div class="col-6">
-                  <input class="w-100 text-center" type="text" />
+                  <input class="w-100 text-center" type="text" placeholder="Lettre" />
                 </div>
               </div>
             </div>
@@ -151,15 +153,7 @@
               class="col-12 col-lg-6 p-1 order-0 order-lg-1 d-flex border border-dark flex-column nom-joueur-head"
             >
               <h4 class="m-auto equipe-recevante">Equipe Recevante</h4>
-              <!-- <div class="row">
-                <div class="col-12">Resultat:</div>
-                <div class="col-4">
-                  <input class="w-100 text-center" type="number" />
-                </div>
-                <div class="col-8">
-                  <input class="w-100 text-center" type="text" />
-                </div>
-              </div> -->
+              <h6 class="m-auto">- joueurs -</h6>
             </div>
             <div class="col-8 col-lg-3 p-1 order-2 order-lg-2 d-flex num-licence-head">
               <h6 class="m-auto text-center text-num-licence">
@@ -179,16 +173,8 @@
             <div
               class="col-12 col-lg-6 p-1 order-0 order-lg-1 d-flex border border-dark flex-column nom-joueur-head"
             >
-              <h4 class="m-auto equipe-recevante">Equipe Recevante</h4>
-              <!-- <div class="row">
-                <div class="col-12">Resultat:</div>
-                <div class="col-4">
-                  <input class="w-100 text-center" type="number" />
-                </div>
-                <div class="col-8">
-                  <input class="w-100 text-center" type="text" />
-                </div>
-              </div> -->
+              <h4 class="m-auto equipe-recevante">Equipe Visiteuse</h4>
+              <h6 class="m-auto">- joueurs -</h6>
             </div>
             <div class="col-8 col-lg-3 p-1 order-2 order-lg-2 d-flex num-licence-head">
               <h6 class="m-auto text-center text-num-licence">
@@ -201,6 +187,53 @@
       </div>
       <!-- ! Table joueur -->
       <hr />
+
+      <!-- * Table accompagnanteurs -->
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="row border border-dark">
+            <div
+              class="col-4 col-lg-3 p-1 order-1 order-lg-0 d-flex border border-dark num-joueur-head"
+            >
+              <h6 class="m-auto">Fonction</h6>
+            </div>
+            <div
+              class="col-12 col-lg-6 p-1 order-0 order-lg-1 d-flex border border-dark flex-column nom-joueur-head"
+            >
+              <h4 class="m-auto equipe-recevante">Equipe Recevante</h4>
+              <h6 class="m-auto">- accompagnanteurs -</h6>
+            </div>
+            <div class="col-8 col-lg-3 p-1 order-2 order-lg-2 d-flex num-licence-head">
+              <h6 class="m-auto text-center text-num-licence">
+                N° de la Licence ou P.I.officiel et signature
+              </h6>
+            </div>
+          </div>
+          <div class="accompagnanteurs-recevante" id="accompagnanteurs-recevante"></div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="row border border-dark">
+            <div
+              class="col-4 col-lg-3 p-1 order-1 order-lg-0 d-flex border border-dark num-joueur-head"
+            >
+              <h6 class="m-auto">Fonction</h6>
+            </div>
+            <div
+              class="col-12 col-lg-6 p-1 order-0 order-lg-1 d-flex border border-dark flex-column nom-joueur-head"
+            >
+              <h4 class="m-auto equipe-recevante">Equipe Visiteuse</h4>
+              <h6 class="m-auto">- accompagnanteurs -</h6>
+            </div>
+            <div class="col-8 col-lg-3 p-1 order-2 order-lg-2 d-flex num-licence-head">
+              <h6 class="m-auto text-center text-num-licence">
+                N° de la Licence ou P.I.officiel et signature
+              </h6>
+            </div>
+          </div>
+          <div class="accompagnanteurs-visiteuse" id="accompagnanteurs-visiteuse"></div>
+        </div>
+      </div>
+      <!-- ! Table accompagnanteurs -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./javascript/index.js"></script>
