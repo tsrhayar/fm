@@ -23,6 +23,18 @@ input[type="number"]::-webkit-outer-spin-button {
   text-transform: capitalize;
 }
 
+/* // */
+
+.ras-reserve-recevante,
+.ras-reserve-visiteuse {
+  background-image: radial-gradient(#858585 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%);
+  background-color: #ffffff;
+  background-position: 0 0, 50px 50px;
+  background-size: 5px 5px;
+  height: 300px;
+  width: 100%;
+}
+
 @media (max-width: 1000px) {
   .club-en-presence {
     font-size: 22px;
@@ -38,6 +50,10 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 800px) {
   .club-en-presence {
     font-size: 19px;
+  }
+  .ras-reserve-visiteuse,
+  .ras-reserve-recevante {
+    height: 200px;
   }
 }
 

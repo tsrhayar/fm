@@ -46,11 +46,11 @@ $(document).ready(function () {
     }
   }
 
-  tableauJoueur("recevante", 20);
-  tableauJoueur("visiteuse", 20);
+//   tableauJoueur("recevante", 20);
+//   tableauJoueur("visiteuse", 20);
 
-  tableauAccompagnateurs("recevante", 7);
-  tableauAccompagnateurs("visiteuse", 7);
+//   tableauAccompagnateurs("recevante", 7);
+//   tableauAccompagnateurs("visiteuse", 7);
 
   $("input").keyup(function () {
     this.value = this.value.toLocaleUpperCase();
