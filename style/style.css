@@ -12,7 +12,8 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+.accompagnanteurs-recevante > div:nth-child(even) > div,
+.accompagnanteurs-visiteuse > div:nth-child(odd) > div,
 .joueurs-recevante > div:nth-child(even) > div,
 .joueurs-visiteuse > div:nth-child(odd) > div {
   background-color: #dee2e6;
@@ -27,12 +28,28 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .ras-reserve-recevante,
 .ras-reserve-visiteuse {
-  background-image: radial-gradient(#858585 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%);
+  background-image: radial-gradient(#858585 20%, transparent 20%),
+    radial-gradient(#fafafa 20%, transparent 20%);
   background-color: #ffffff;
   background-position: 0 0, 50px 50px;
   background-size: 5px 5px;
   height: 300px;
   width: 100%;
+}
+
+.reserve-qualification {
+  min-height: 200px;
+}
+
+/* // */
+
+.reserve-technique-default {
+  background-image: radial-gradient(#858585 20%, transparent 20%),
+    radial-gradient(#fafafa 20%, transparent 20%);
+  background-color: #ffffff;
+  background-position: 0 0, 50px 50px;
+  background-size: 5px 5px;
+  min-height: 150px;
 }
 
 @media (max-width: 1000px) {
