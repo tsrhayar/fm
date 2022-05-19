@@ -24,7 +24,7 @@
           <br />
           <input type="number" class="text-center mt-1" placeholder="Code de match .." />
         </div>
-        <div class="col-12 col-md-4 d-flex flex-column text-center">
+        <div class="col-12 col-md-4 d-flex flex-column text-center text-center">
           <h4 class="mt-auto">ورقــــــــة الــتـــــحــــكــــيــــم</h4>
           <h4>FEUILLE D'ARBITRAGE</h4>
         </div>
@@ -118,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-2 d-flex flex-column">
+            <div class="col-2 d-flex flex-column text-center">
               <b class="h4 mx-auto">#</b>
             </div>
             <div class="col-5">
@@ -410,52 +410,313 @@
       <!-- * Avertisement -->
       <div class="row">
         <div class="col-12 col-sm-6 border border-dark">
-          <h5 class="text-center">Joueuers ou accompagnateurs avertis</h5>
+          <h5 class="text-center">Joueurs ou accompagnateurs avertis</h5>
           <hr />
           <div class="d-flex">
-            <h6>OCS : </h6> &nbsp;&nbsp;
-            <button class="btn btn-secondary btn-sm btn-circle">+</button>
+            <h6>-- :</h6>
+            &nbsp;&nbsp;
+            <h6 class="ajouter me-1">
+              <span class="badge bg-secondary" id="ajouter-joueur-averti-recevante">Ajouter </span>
+            </h6>
+            <h6 class="ajouter">
+              <span class="badge bg-secondary" id="supprimer-joueur-averti-recevante"
+                >Supprimer</span
+              >
+            </h6>
           </div>
           <div class="row mt-2">
-            <div class="col-12">
-              <div class="row  border border-dark border-bottom-0 border-start-0 border-end-0">
+            <div class="col-12" id="joueurs-averti-recevante">
+              <div class="row border border-dark avertisement mb-1 mx-1">
                 <div
-                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur"
+                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
                 >
                   N°
                 </div>
                 <div
-                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur"
+                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
                 >
                   Nom et prénom
                 </div>
-                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
+                <div
+                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                >
                   Licence
                 </div>
               </div>
-              <div class="row border border-dark border-bottom-0 border-start-0 border-end-0 avertisement">
+              <div class="row border border-dark avertisement mb-1 mx-1">
+                <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 border border-dark num-joueur">
+                  <div class="row">
+                    <div class="col-2 text-center text-muted">1•</div>
+                    <div class="col-10">
+                      <input type="number" class="w-100 text-center" placeholder="N°..." />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 border border-dark nom-joueur">
+                  <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." />
+                </div>
+                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 num-licence">
+                  <input type="text" class="w-100 text-center" placeholder="Licence..." />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <h6>-- :</h6>
+            &nbsp;&nbsp;
+            <h6 class="ajouter me-1">
+              <span class="badge bg-secondary" id="ajouter-joueur-averti-visiteuse"
+                >Ajouter <i class="fa-solid fa-plus"></i
+              ></span>
+            </h6>
+            <h6 class="ajouter">
+              <span class="badge bg-secondary" id="supprimer-joueur-averti-visiteuse"
+                >Supprimer</span
+              >
+            </h6>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12" id="joueurs-averti-visiteuse">
+              <div class="row border border-dark avertisement mb-1 mx-1">
                 <div
-                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur"
+                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
                 >
-                  <input type="number" class="w-100 text-center" />
+                  N°
                 </div>
                 <div
-                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur"
+                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
                 >
-                  <input type="text" class="w-100" />
+                  Nom et prénom
                 </div>
-                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
-                  <input type="text" class="w-100 text-center" />
+                <div
+                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                >
+                  Licence
+                </div>
+              </div>
+              <div class="row border border-dark avertisement mb-1 mx-1">
+                <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 border border-dark num-joueur">
+                  <div class="row">
+                    <div class="col-2 text-center text-muted">1•</div>
+                    <div class="col-10">
+                      <input type="number" class="w-100 text-center" placeholder="N°..." />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 border border-dark nom-joueur">
+                  <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." />
+                </div>
+                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 num-licence">
+                  <input type="text" class="w-100 text-center" placeholder="Licence..." />
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 border border-dark">
-          <h5 class="text-center">Joueuers ou accompagnateurs explus</h5>
+          <h5 class="text-center">Joueurs ou accompagnateurs explus</h5>
+
+          <hr />
+          <div class="d-flex">
+            <h6>-- :</h6>
+            &nbsp;&nbsp;
+            <h6 class="ajouter me-1">
+              <span class="badge bg-secondary" id="ajouter-joueur-explu-recevante"
+                >Ajouter <i class="fa-solid fa-plus"></i
+              ></span>
+            </h6>
+            <h6 class="ajouter">
+              <span class="badge bg-secondary" id="supprimer-joueur-explu-recevante"
+                >Supprimer</span
+              >
+            </h6>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12" id="joueurs-explu-recevante">
+              <div class="row border border-dark avertisement mb-1 mx-1">
+                <div
+                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                >
+                  N°
+                </div>
+                <div
+                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                >
+                  Nom et prénom
+                </div>
+                <div
+                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                >
+                  Licence
+                </div>
+              </div>
+              <div class="row border border-dark avertisement mb-1 mx-1">
+                <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 border border-dark num-joueur">
+                  <div class="row">
+                    <div class="col-2 text-center text-muted">1•</div>
+                    <div class="col-10">
+                      <input type="number" class="w-100 text-center" placeholder="N°..." />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 border border-dark nom-joueur">
+                  <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." />
+                </div>
+                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 num-licence">
+                  <input type="text" class="w-100 text-center" placeholder="Licence..." />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <h6>-- :</h6>
+            &nbsp;&nbsp;
+            <h6 class="ajouter me-1">
+              <span class="badge bg-secondary" id="ajouter-joueur-explu-visiteuse"
+                >Ajouter <i class="fa-solid fa-plus"></i
+              ></span>
+            </h6>
+            <h6 class="ajouter">
+              <span class="badge bg-secondary" id="supprimer-joueur-explu-visiteuse"
+                >Supprimer</span
+              >
+            </h6>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12" id="joueurs-explu-visiteuse">
+              <div class="row border border-dark avertisement mb-1 mx-1">
+                <div
+                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                >
+                  N°
+                </div>
+                <div
+                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                >
+                  Nom et prénom
+                </div>
+                <div
+                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                >
+                  Licence
+                </div>
+              </div>
+              <div class="row border border-dark avertisement mb-1 mx-1">
+                <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 border border-dark num-joueur">
+                  <div class="row">
+                    <div class="col-2 text-center text-muted">1•</div>
+                    <div class="col-10">
+                      <input type="number" class="w-100 text-center" placeholder="N°..." />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 border border-dark flex-column nom-joueur"
+                >
+                  <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." />
+                </div>
+                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 num-licence">
+                  <input type="text" class="w-100 text-center" placeholder="Licence..." />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- ! Avertisement -->
+      <!-- * Joueurs blessés -->
+      <!-- <div class="row">
+        <div class="col-12 border border-dark">
+          <h5 class="text-center">Joueurs blessés</h5>
+          <hr />
+          <div class="d-flex">
+            <h6>-- :</h6>
+            &nbsp;&nbsp;
+            <h6 class="ajouter">
+              <span class="badge bg-secondary" id="ajouter-joueur-blesses-recevante"
+                >Ajouter <i class="fa-solid fa-plus"></i
+              ></span>
+            </h6>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12" id="joueurs-averti-recevante">
+              <div class="row border border-dark avertisement mb-1 mx-1">
+                <div
+                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                >
+                  N°
+                </div>
+                <div
+                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                >
+                  Nom et prénom
+                </div>
+                <div
+                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                >
+                  Licence
+                </div>
+              </div>
+              <div class="row border border-dark avertisement mb-1 mx-1">
+                <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 border border-dark num-joueur">
+                  <input type="number" class="w-100 text-center" placeholder="N°..." />
+                </div>
+                <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 border border-dark nom-joueur">
+                  <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." />
+                </div>
+                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 num-licence">
+                  <input type="text" class="w-100 text-center" placeholder="Licence..." />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="d-flex">
+            <h6>-- :</h6>
+            &nbsp;&nbsp;
+            <h6 class="ajouter">
+              <span class="badge bg-secondary" id="ajouter-joueur-blesses-visiteuse"
+                >Ajouter <i class="fa-solid fa-plus"></i
+              ></span>
+            </h6>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12" id="joueurs-averti-visiteuse">
+              <div class="row border border-dark mb-1 mx-1">
+                <div
+                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                >
+                  N°
+                </div>
+                <div
+                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                >
+                  Nom et prénom
+                </div>
+                <div
+                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                >
+                  Licence
+                </div>
+              </div>
+              <div class="row border border-dark mb-1 mx-1">
+                <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 border border-dark num-joueur">
+                  <input type="number" class="w-100 text-center" placeholder="N°..." />
+                </div>
+                <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 border border-dark nom-joueur">
+                  <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." />
+                </div>
+                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 num-licence">
+                  <input type="text" class="w-100 text-center" placeholder="Licence..." />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- ! Joueurs blessés -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./javascript/index.js"></script>
