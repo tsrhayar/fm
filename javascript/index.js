@@ -10,7 +10,7 @@ $(document).ready(function () {
                     <div class="col-5 col-sm-6 col-md-4 col-lg-6">
                       <div class="row">
                         <div class="col-5 text-muted">
-                          ${i+1}&nbsp;•
+                          ${i + 1}&nbsp;•
                         </div>
                         <div class="col-7">
                           <input class="ms-2 form-check-input me-2" type="radio" name="captitaine-${type}"></div>
@@ -27,7 +27,7 @@ $(document).ready(function () {
               </div>
           </div>
       </div>`);
-      if(i==10){
+      if (i == 10) {
         $(`#joueurs-${type}`).append('<hr class="my-2"/>');
       }
     }
@@ -43,7 +43,7 @@ $(document).ready(function () {
                           <div class="col-3">
                             <div class="row">
                               <div class="col-12 text-muted">
-                                ${i+1}&nbsp;•
+                                ${i + 1}&nbsp;•
                               </div>
                             </div>
                           </div>
@@ -127,12 +127,12 @@ $('input[name="reserve-technique"]').click(function () {
 });
 
 function nombreJoueurAvertiOuExplu(type, equipe) {
-  for (let i = 0; i < 14; i++) {
+  for (let i = 0; i < 15; i++) {
     $(`#joueurs-${type}-${equipe}`).append(`
       <div class="row border border-dark avertisement mb-1 mx-1 d-none">
         <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 border border-dark num-joueur">
           <div class="row">
-            <div class="col-3 text-center text-muted">${i + 2}•</div>
+            <div class="col-3 text-center text-muted">${i + 1}•</div>
             <div class="col-9">
               <input type="number" class="w-100 text-center" placeholder="N°..." />
             </div>
@@ -153,6 +153,9 @@ function nombreJoueurAvertiOuExplu(type, equipe) {
       const element = childrenDiv[i];
       if (element.classList.contains("d-none")) {
         element.classList.remove("d-none");
+        if (!i) {
+          childrenDiv[1].classList.remove("d-none");
+        }
         break;
       }
     }
@@ -165,13 +168,33 @@ function nombreJoueurAvertiOuExplu(type, equipe) {
         const element = childrenDiv[i];
         if (element.classList.contains("d-none")) {
           childrenDiv[i - 1].classList.add("d-none");
+          let allInput = childrenDiv[i - 1].querySelectorAll("input");
+          for (let i = 0; i < allInput.length; i++) {
+            const input = allInput[i];
+            input.value = "";
+          }
           lastDiv = false;
           break;
         }
       }
+      if (childrenDiv[2].classList.contains("d-none")) {
+        childrenDiv[0].classList.add("d-none");
+        let allInput = childrenDiv[1].querySelectorAll("input");
+        for (let i = 0; i < allInput.length; i++) {
+          const input = allInput[i];
+          input.value = "";
+        }
+        childrenDiv[1].classList.add("d-none");
+        break;
+      }
     }
     if (lastDiv) {
       childrenDiv[childrenDiv.length - 1].classList.add("d-none");
+      let allInput = childrenDiv[childrenDiv.length - 1].querySelectorAll("input");
+      for (let i = 0; i < allInput.length; i++) {
+        const input = allInput[i];
+        input.value = "";
+      }
     }
   });
 }
