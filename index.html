@@ -15,1247 +15,1364 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container-xl mb-5 mt-1">
-      <!-- * Header -->
-      <div class="row">
-        <div class="col-12 col-md-4 text-center">
-          <h6>الجامعة الملكية المغربية لكرة القدم</h6>
-          <h6>Fédération royale marocaine de football</h6>
-          <img src="./img/logo-frmf.png" class="img-fluid frmf-logo" />
-          <br />
-          <input type="number" class="text-center mt-1" placeholder="Code de match .." />
-        </div>
-        <div class="col-12 col-md-4 d-flex flex-column text-center text-center">
-          <h4 class="mt-auto">ورقــــــــة الــتـــــحــــكــــيــــم</h4>
-          <h4>FEUILLE D'ARBITRAGE</h4>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="row mb-1">
-            <div class="col-3">Saison</div>
-            <div class="col-6">
-              <div class="row">
-                <div class="col-6">
-                  <input class="w-100 text-center flc" type="number" placeholder="202-" />
-                </div>
-                <div class="col-6">
-                  <input class="w-100 text-center flc" type="number" placeholder="202-" />
-                </div>
-              </div>
-            </div>
-            <div class="col-3" dir="rtl">موسم</div>
+    <form id="feuille-de-match">
+      <div class="container-xl mb-5 mt-1">
+        <!-- * Header -->
+        <div class="row">
+          <div class="col-12 col-md-4 text-center">
+            <h6>الجامعة الملكية المغربية لكرة القدم</h6>
+            <h6>Fédération royale marocaine de football</h6>
+            <img src="./img/logo-frmf.png" class="img-fluid frmf-logo" />
+            <br />
+            <input
+              type="number"
+              class="text-center mt-1"
+              placeholder="Code de match .."
+              name="code-match"
+              id="code-match"
+            />
           </div>
-          <div class="row mb-1">
-            <div class="col-3">Division</div>
-            <div class="col-6">
-              <select class="w-100 text-center">
-                <option value="" selected="">--</option>
-                <option value="coupe-du-trone">Coupe du trône</option>
-                <option value="pro-1">Pro 1</option>
-                <option value="pro-2">Pro 2</option>
-                <option value="national">National</option>
-                <option value="amateur-1">Amateur 1</option>
-                <option value="amateur-2">Amateur 2</option>
-                <option value="feminine-d1">Féminin D1</option>
-                <option value="feminine-d2">Féminin D2</option>
-              </select>
-            </div>
-            <div class="col-3" dir="rtl">القسم</div>
+          <div class="col-12 col-md-4 d-flex flex-column text-center text-center">
+            <h4 class="mt-auto">ورقــــــــة الــتـــــحــــكــــيــــم</h4>
+            <h4>FEUILLE D'ARBITRAGE</h4>
           </div>
-          <div class="row mb-1">
-            <div class="col-3">Date</div>
-            <div class="col-6">
-              <input class="w-100 text-center" type="date" />
-            </div>
-            <div class="col-3" dir="rtl">تاريخ</div>
-          </div>
-          <div class="row mb-1">
-            <div class="col-3">Heure</div>
-            <div class="col-6">
-              <input class="w-100 text-center" type="time" />
-            </div>
-            <div class="col-3" dir="rtl">الساعة</div>
-          </div>
-          <div class="row mb-1">
-            <div class="col-3">Terrain</div>
-            <div class="col-6">
-              <input class="w-100 text-center" type="text" placeholder="terrain .." />
-            </div>
-            <div class="col-3" dir="rtl">ملعب</div>
-          </div>
-          <div class="row">
-            <div class="col-3">Ville</div>
-            <div class="col-6">
-              <input class="w-100 text-center" type="text" placeholder="ville .." />
-            </div>
-            <div class="col-3" dir="rtl">المدينة</div>
-          </div>
-        </div>
-      </div>
-      <!-- ! Header -->
-      <!-- * Club en presence -->
-      <div class="row my-3">
-        <div class="col-6 col-md-3 order-0 order-md-0">
-          <h5>CLUB EN PRESENCE</h5>
-        </div>
-        <div class="col-12 col-md-6 order-2 order-md-1">
-          <div class="row">
-            <div class="col-5">
-              <input class="text-center w-100" type="text" placeholder="Equipe recevante" />
-            </div>
-            <div class="col-2 d-flex"><b class="h4 m-auto"></b></div>
-            <div class="col-5">
-              <input class="text-center w-100" type="text" placeholder="Equipe visiteuse" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-5">
-              <div class="row">
-                <div class="col-12">Resultat:</div>
-                <div class="col-6">
-                  <input class="w-100 text-center" type="number" placeholder="Chiffre" />
-                </div>
-                <div class="col-6">
-                  <input class="w-100 text-center" type="text" placeholder="Lettre" />
-                </div>
-              </div>
-            </div>
-            <div class="col-2 d-flex flex-column text-center">
-              <b class="h4 mx-auto">#</b>
-            </div>
-            <div class="col-5">
-              <div class="row">
-                <div class="col-12">Resultat:</div>
-                <div class="col-6">
-                  <input class="w-100 text-center" type="number" placeholder="Chiffre" />
-                </div>
-                <div class="col-6">
-                  <input class="w-100 text-center" type="text" placeholder="Lettre" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 order-1 order-md-2" dir="rtl">
-          <h5>الفريقان المتباريان</h5>
-        </div>
-      </div>
-      <!-- ! Club en presence -->
-      <hr />
-      <!-- * Table joueur -->
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <div class="row border border-dark border-bottom-0">
-            <h4 class="text-center">Equipe Recevante</h4>
-          </div>
-          <div class="row border border-dark">
-            <div class="col-6 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur">
-              <div class="row">
-                <div class="col-5 col-sm-6 col-md-4 col-lg-6 my-auto">
-                  <div class="row">
-                    <div class="col-5 text-muted">
-                      <h6 class="text-center">#</h6>
-                    </div>
-                    <div class="col-7">
-                      <h6>Cap</h6>
-                    </div>
+          <div class="col-12 col-md-4">
+            <div class="row mb-1">
+              <div class="col-3">Saison</div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-6">
+                    <input
+                      class="w-100 text-center flc"
+                      type="number"
+                      placeholder="202-"
+                      name="saison1"
+                      id="saison1"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <input
+                      class="w-100 text-center flc"
+                      type="number"
+                      placeholder="202-"
+                      name="saison2"
+                      id="saison2"
+                    />
                   </div>
                 </div>
-                <div class="col-7 col-sm-6 col-md-8 col-lg-6 my-auto">
-                  <input type="text" readonly disabled class="w-100 text-center" value="N°" />
-                </div>
+              </div>
+              <div class="col-3" dir="rtl">موسم</div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-3">Division</div>
+              <div class="col-6">
+                <select class="w-100 text-center">
+                  <option value="" selected="">--</option>
+                  <option value="coupe-du-trone">Coupe du trône</option>
+                  <option value="pro-1">Pro 1</option>
+                  <option value="pro-2">Pro 2</option>
+                  <option value="national">National</option>
+                  <option value="amateur-1">Amateur 1</option>
+                  <option value="amateur-2">Amateur 2</option>
+                  <option value="feminine-d1">Féminin D1</option>
+                  <option value="feminine-d2">Féminin D2</option>
+                </select>
+              </div>
+              <div class="col-3" dir="rtl">القسم</div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-3">Date</div>
+              <div class="col-6">
+                <input class="w-100 text-center" type="date" name="date-match" id="date-match" />
+              </div>
+              <div class="col-3" dir="rtl">تاريخ</div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-3">Heure</div>
+              <div class="col-6">
+                <input class="w-100 text-center" type="time" name="heure-match"  id="heure-match" />
+              </div>
+              <div class="col-3" dir="rtl">الساعة</div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-3">Terrain</div>
+              <div class="col-6">
+                <input
+                  class="w-100 text-center"
+                  type="text"
+                  placeholder="terrain .."
+                  name="terrain-match"
+                  id="terrain-match"
+                />
+              </div>
+              <div class="col-3" dir="rtl">ملعب</div>
+            </div>
+            <div class="row">
+              <div class="col-3">Ville</div>
+              <div class="col-6">
+                <input
+                  class="w-100 text-center"
+                  type="text"
+                  placeholder="ville .."
+                  name="ville-match"
+                  id="ville-match"
+                />
+              </div>
+              <div class="col-3" dir="rtl">المدينة</div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Header -->
+        <!-- * Club en presence -->
+        <div class="row my-3">
+          <div class="col-6 col-md-3 order-0 order-md-0">
+            <h5>CLUB EN PRESENCE</h5>
+          </div>
+          <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="row">
+              <div class="col-5">
+                <input
+                  class="text-center w-100"
+                  type="text"
+                  placeholder="Equipe recevante"
+                  name="equipe-recevante"
+                  id="equipe-recevante"
+                />
+              </div>
+              <div class="col-2 d-flex"><b class="h4 m-auto"></b></div>
+              <div class="col-5">
+                <input
+                  class="text-center w-100"
+                  type="text"
+                  placeholder="Equipe visiteuse"
+                  name="equipe-visiteuse"
+                  id="equipe-visiteuse"
+                />
               </div>
             </div>
-            <div
-              class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur"
-            >
-              <h6 class="text-center m-auto">Nom et prénom</h6>
-            </div>
-            <div class="col-6 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
-              <h6 class="text-center m-auto">N° de la Licence ou P.I.officiel et signature</h6>
-            </div>
-          </div>
-          <div class="joueurs-recevante" id="joueurs-recevante"></div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="row border border-dark border-bottom-0">
-            <h4 class="text-center">Equipe Visiteuse</h4>
-          </div>
-          <div class="row border border-dark">
-            <div class="col-6 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur">
-              <div class="row">
-                <div class="col-5 col-sm-6 col-md-4 col-lg-6 my-auto">
-                  <div class="row">
-                    <div class="col-5 text-muted">
-                      <h6 class="text-center">#</h6>
-                    </div>
-                    <div class="col-7">
-                      <h6>Cap</h6>
-                    </div>
+            <div class="row">
+              <div class="col-5">
+                <div class="row">
+                  <div class="col-12">Resultat:</div>
+                  <div class="col-6">
+                    <input
+                      class="w-100 text-center"
+                      type="number"
+                      placeholder="Chiffre"
+                      name="resultat-chiffre-recevante"
+                      id="resultat-chiffre-recevante"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <input
+                      class="w-100 text-center"
+                      type="text"
+                      placeholder="Lettre"
+                      name="resultat-lettre-recevante"
+                      id="resultat-lettre-recevante"
+                    />
                   </div>
                 </div>
-                <div class="col-7 col-sm-6 col-md-8 col-lg-6 my-auto">
-                  <input type="text" readonly disabled class="w-100 text-center" value="N°" />
+              </div>
+              <div class="col-2 d-flex flex-column text-center">
+                <b class="h4 mx-auto">#</b>
+              </div>
+              <div class="col-5">
+                <div class="row">
+                  <div class="col-12">Resultat:</div>
+                  <div class="col-6">
+                    <input
+                      class="w-100 text-center"
+                      type="number"
+                      placeholder="Chiffre"
+                      name="resultat-chiffre-visiteuse"
+                      id="resultat-chiffre-visiteuse"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <input
+                      class="w-100 text-center"
+                      type="text"
+                      placeholder="Lettre"
+                      name="resultat-lettre-visiteuse"
+                      id="resultat-lettre-visiteuse"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur"
-            >
-              <h6 class="text-center m-auto">Nom et prénom</h6>
-            </div>
-            <div class="col-6 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
-              <h6 class="text-center m-auto">N° de la Licence ou P.I.officiel et signature</h6>
-            </div>
           </div>
-          <div class="joueurs-visiteuse" id="joueurs-visiteuse"></div>
+          <div class="col-6 col-md-3 order-1 order-md-2" dir="rtl">
+            <h5>الفريقان المتباريان</h5>
+          </div>
         </div>
-      </div>
-      <!-- ! Table joueur -->
-      <hr />
+        <!-- ! Club en presence -->
+        <hr />
+        <!-- * Table joueur -->
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <div class="row border border-dark border-bottom-0">
+              <h4 class="text-center">Equipe Recevante</h4>
+            </div>
+            <div class="row border border-dark">
+              <div
+                class="col-6 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur"
+              >
+                <div class="row">
+                  <div class="col-5 col-sm-6 col-md-4 col-lg-6 my-auto">
+                    <div class="row">
+                      <div class="col-5 text-muted">
+                        <h6 class="text-center">#</h6>
+                      </div>
+                      <div class="col-7">
+                        <h6>Cap</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-6 col-md-8 col-lg-6 my-auto">
+                    <input type="text" readonly disabled class="w-100 text-center" value="N°" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur"
+              >
+                <h6 class="text-center m-auto">Nom et prénom</h6>
+              </div>
+              <div class="col-6 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
+                <h6 class="text-center m-auto">N° de la Licence ou P.I.officiel et signature</h6>
+              </div>
+            </div>
+            <div class="joueurs-recevante" id="joueurs-recevante"></div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="row border border-dark border-bottom-0">
+              <h4 class="text-center">Equipe Visiteuse</h4>
+            </div>
+            <div class="row border border-dark">
+              <div
+                class="col-6 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur"
+              >
+                <div class="row">
+                  <div class="col-5 col-sm-6 col-md-4 col-lg-6 my-auto">
+                    <div class="row">
+                      <div class="col-5 text-muted">
+                        <h6 class="text-center">#</h6>
+                      </div>
+                      <div class="col-7">
+                        <h6>Cap</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-6 col-md-8 col-lg-6 my-auto">
+                    <input type="text" readonly disabled class="w-100 text-center" value="N°" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur"
+              >
+                <h6 class="text-center m-auto">Nom et prénom</h6>
+              </div>
+              <div class="col-6 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
+                <h6 class="text-center m-auto">N° de la Licence ou P.I.officiel et signature</h6>
+              </div>
+            </div>
+            <div class="joueurs-visiteuse" id="joueurs-visiteuse"></div>
+          </div>
+        </div>
+        <!-- ! Table joueur -->
+        <hr />
 
-      <!-- * Table accompagnanteurs -->
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <div class="row border border-dark">
-            <div
-              class="col-4 col-lg-3 p-1 order-1 order-lg-0 d-flex border border-dark num-joueur-head"
-            >
-              <h6 class="m-auto">Fonction</h6>
-            </div>
-            <div
-              class="col-12 col-lg-6 p-1 order-0 order-lg-1 d-flex border border-dark flex-column nom-joueur-head"
-            >
-              <h4 class="m-auto equipe-recevante">Equipe Recevante</h4>
-              <h6 class="m-auto">- accompagnanteurs -</h6>
-            </div>
-            <div class="col-8 col-lg-3 p-1 order-2 order-lg-2 d-flex num-licence-head">
-              <h6 class="m-auto text-center text-num-licence">
-                N° de la Licence ou P.I.officiel et signature
-              </h6>
-            </div>
-          </div>
-          <div class="accompagnanteurs-recevante" id="accompagnanteurs-recevante"></div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="row border border-dark">
-            <div
-              class="col-4 col-lg-3 p-1 order-1 order-lg-0 d-flex border border-dark num-joueur-head"
-            >
-              <h6 class="m-auto">Fonction</h6>
-            </div>
-            <div
-              class="col-12 col-lg-6 p-1 order-0 order-lg-1 d-flex border border-dark flex-column nom-joueur-head"
-            >
-              <h4 class="m-auto equipe-recevante">Equipe Visiteuse</h4>
-              <h6 class="m-auto">- accompagnanteurs -</h6>
-            </div>
-            <div class="col-8 col-lg-3 p-1 order-2 order-lg-2 d-flex num-licence-head">
-              <h6 class="m-auto text-center text-num-licence">
-                N° de la Licence ou P.I.officiel et signature
-              </h6>
-            </div>
-          </div>
-          <div class="accompagnanteurs-visiteuse" id="accompagnanteurs-visiteuse"></div>
-        </div>
-      </div>
-      <!-- ! Table accompagnanteurs -->
-      <hr />
-      <!-- * Reserve qualification -->
-      <div>
+        <!-- * Table accompagnanteurs -->
         <div class="row">
-          <div class="col-12 border border-dark">
-            <h3 class="text-center">Reserve sur les questions de qualification</h3>
+          <div class="col-12 col-sm-6">
+            <div class="row border border-dark">
+              <div
+                class="col-4 col-lg-3 p-1 order-1 order-lg-0 d-flex border border-dark num-joueur-head"
+              >
+                <h6 class="m-auto">Fonction</h6>
+              </div>
+              <div
+                class="col-12 col-lg-6 p-1 order-0 order-lg-1 d-flex border border-dark flex-column nom-joueur-head"
+              >
+                <h4 class="m-auto equipe-recevante">Equipe Recevante</h4>
+                <h6 class="m-auto">- accompagnanteurs -</h6>
+              </div>
+              <div class="col-8 col-lg-3 p-1 order-2 order-lg-2 d-flex num-licence-head">
+                <h6 class="m-auto text-center text-num-licence">
+                  N° de la Licence ou P.I.officiel et signature
+                </h6>
+              </div>
+            </div>
+            <div class="accompagnanteurs-recevante" id="accompagnanteurs-recevante"></div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="row border border-dark">
+              <div
+                class="col-4 col-lg-3 p-1 order-1 order-lg-0 d-flex border border-dark num-joueur-head"
+              >
+                <h6 class="m-auto">Fonction</h6>
+              </div>
+              <div
+                class="col-12 col-lg-6 p-1 order-0 order-lg-1 d-flex border border-dark flex-column nom-joueur-head"
+              >
+                <h4 class="m-auto equipe-recevante">Equipe Visiteuse</h4>
+                <h6 class="m-auto">- accompagnanteurs -</h6>
+              </div>
+              <div class="col-8 col-lg-3 p-1 order-2 order-lg-2 d-flex num-licence-head">
+                <h6 class="m-auto text-center text-num-licence">
+                  N° de la Licence ou P.I.officiel et signature
+                </h6>
+              </div>
+            </div>
+            <div class="accompagnanteurs-visiteuse" id="accompagnanteurs-visiteuse"></div>
           </div>
         </div>
+        <!-- ! Table accompagnanteurs -->
+        <hr />
+        <!-- * Reserve qualification -->
+        <div>
+          <div class="row">
+            <div class="col-12 border border-dark">
+              <h3 class="text-center">Reserve sur les questions de qualification</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 border border-dark">
+              <div class="row">
+                <h5 class="m-auto text-center">Equipe Recevante</h5>
+                <hr class="my-1" />
+              </div>
+              <div class="row">
+                <div class="col-6 form-check d-flex justify-content-center align-items-center">
+                  <input
+                    class="ms-2 form-check-input me-2"
+                    type="radio"
+                    name="reserve-recevante"
+                    id="reserve-recevante1"
+                    value="ras"
+                  />
+                  <label class="form-check-label" for="reserve-recevante1"> RAS </label>
+                </div>
+                <div class="col-6 form-check d-flex justify-content-center align-items-center">
+                  <input
+                    class="ms-2 form-check-input me-2"
+                    type="radio"
+                    name="reserve-recevante"
+                    id="reserve-recevante2"
+                    value="reserve"
+                  />
+                  <label class="form-check-label" for="reserve-recevante2"> Reserve </label>
+                </div>
+              </div>
+              <div class="reserve-qualification" id="reserve-recevante">
+                <div class="ras-reserve-recevante d-flex">
+                  <span class="h2 m-auto text-center opacity-50">Reserve de qualification</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 border border-dark">
+              <div class="row">
+                <h5 class="m-auto text-center">Equipe Visiteuse</h5>
+                <hr class="my-1" />
+              </div>
+              <div class="row">
+                <div class="col-6 form-check d-flex justify-content-center align-items-center">
+                  <input
+                    class="ms-2 form-check-input me-2"
+                    type="radio"
+                    name="reserve-visiteuse"
+                    id="reserve-visiteuse1"
+                    value="ras"
+                  />
+                  <label class="form-check-label" for="reserve-visiteuse1"> RAS </label>
+                </div>
+                <div class="col-6 form-check d-flex justify-content-center align-items-center">
+                  <input
+                    class="ms-2 form-check-input me-2"
+                    type="radio"
+                    name="reserve-visiteuse"
+                    id="reserve-visiteuse2"
+                    value="reserve"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2"> Reserve </label>
+                </div>
+              </div>
+              <div class="reserve-qualification" id="reserve-visiteuse">
+                <div class="ras-reserve-visiteuse d-flex">
+                  <span class="h2 m-auto text-center opacity-50">Reserve de qualification</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Reserve qualification -->
+        <!-- * Signature -->
         <div class="row">
+          <div class="col-12">
+            <div class="row p-2 border border-dark border-bottom-0">
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <h6 class="mb-1 m-md-0">
+                      <span
+                        class="badge bg-secondary signature"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signatureCapEquipeRecevante"
+                      >
+                        signateur cap eq recevante
+                      </span>
+                    </h6>
+                  </div>
+                  <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <h6 class="mb-1 m-md-0">
+                      <span
+                        class="badge bg-secondary signature"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signatureCapEquipeVisiteuse"
+                      >
+                        signateur cap eq visiteuse
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <h6 class="mb-1 m-md-0">
+                      <span
+                        class="badge bg-secondary signature"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signatureArbitre"
+                      >
+                        signateur arbitre
+                      </span>
+                    </h6>
+                  </div>
+                  <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <h6 class="mb-1 m-md-0">
+                      <span
+                        class="badge bg-secondary signature"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signatureComissaire"
+                      >
+                        signateur comissaire
+                      </span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-12 col-sm-6 border border-dark">
-            <div class="row">
-              <h5 class="m-auto text-center">Equipe Recevante</h5>
-              <hr class="my-1" />
+            <div class="row my-2">
+              <div class="col-12 col-md-6 d-flex justify-content-center">
+                <span class="my-auto text-center"> S. Capitaine éq. recevante : </span>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  title="Double click pour signer"
+                  class="img-fluid signature-img"
+                  id="signatureCapEquipeRecevanteImg"
+                />
+              </div>
             </div>
+            <hr />
+            <div class="row my-2">
+              <div class="col-12 col-md-6 d-flex justify-content-center">
+                <span class="my-auto text-center"> S. Capitaine éq. visiteuse : </span>
+              </div>
+
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  title="Double click pour signer"
+                  class="img-fluid signature-img"
+                  id="signatureCapEquipeVisiteuseImg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 border border-dark">
+            <div class="row my-2">
+              <div class="col-12 col-md-6 d-flex justify-content-center">
+                <span class="my-auto text-center"> Signature arbitre : </span>
+              </div>
+
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  title="Double click pour signer"
+                  class="img-fluid signature-img"
+                  id="signatureArbitreImg"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="row my-2">
+              <div class="col-12 col-md-6 d-flex justify-content-center">
+                <span class="my-auto text-center"> Signature comissaire : </span>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  title="Double click pour signer"
+                  class="img-fluid signature-img"
+                  id="signatureComissaireImg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Signature -->
+        <!-- * Reserve techniques -->
+        <div class="row reserve-technique">
+          <div class="col-12">
             <div class="row">
-              <div class="col-6 form-check d-flex justify-content-center align-items-center">
+              <div class="col-12 col-sm-6 border border-dark">
+                <h5>Reserves sur les questions techniques</h5>
+              </div>
+              <div class="col-12 col-sm-6 border border-dark" dir="rtl">
+                <h5>الإحتجاجات الفنية</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row border border-dark py-3">
+              <div class="col-6 d-flex justify-content-center align-items-center">
                 <input
                   class="ms-2 form-check-input me-2"
                   type="radio"
-                  name="reserve-recevante"
-                  id="reserve-recevante1"
+                  name="reserve-technique"
+                  id="reserve-technique1"
                   value="ras"
                 />
-                <label class="form-check-label" for="reserve-recevante1"> RAS </label>
+                <label class="form-check-label" for="flexRadioDefault2"> RAS </label>
               </div>
-              <div class="col-6 form-check d-flex justify-content-center align-items-center">
+              <div class="col-6 d-flex justify-content-center align-items-center">
                 <input
                   class="ms-2 form-check-input me-2"
                   type="radio"
-                  name="reserve-recevante"
-                  id="reserve-recevante2"
-                  value="reserve"
-                />
-                <label class="form-check-label" for="reserve-recevante2"> Reserve </label>
-              </div>
-            </div>
-            <div class="reserve-qualification" id="reserve-recevante">
-              <div class="ras-reserve-recevante d-flex">
-                <span class="h2 m-auto text-center opacity-50">Reserve de qualification</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 border border-dark">
-            <div class="row">
-              <h5 class="m-auto text-center">Equipe Visiteuse</h5>
-              <hr class="my-1" />
-            </div>
-            <div class="row">
-              <div class="col-6 form-check d-flex justify-content-center align-items-center">
-                <input
-                  class="ms-2 form-check-input me-2"
-                  type="radio"
-                  name="reserve-visiteuse"
-                  id="reserve-visiteuse1"
-                  value="ras"
-                />
-                <label class="form-check-label" for="reserve-visiteuse1"> RAS </label>
-              </div>
-              <div class="col-6 form-check d-flex justify-content-center align-items-center">
-                <input
-                  class="ms-2 form-check-input me-2"
-                  type="radio"
-                  name="reserve-visiteuse"
-                  id="reserve-visiteuse2"
+                  name="reserve-technique"
+                  id="reserve-technique2"
                   value="reserve"
                 />
                 <label class="form-check-label" for="flexRadioDefault2"> Reserve </label>
               </div>
             </div>
-            <div class="reserve-qualification" id="reserve-visiteuse">
-              <div class="ras-reserve-visiteuse d-flex">
-                <span class="h2 m-auto text-center opacity-50">Reserve de qualification</span>
+          </div>
+          <div class="col-12" id="reserve-technique">
+            <div class="row">
+              <div class="col-12 border border-dark reserve-technique-default d-flex">
+                <span class="h2 m-auto text-center text-muted opacity-50">
+                  Reserves sur les questions techniques
+                </span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- ! Reserve qualification -->
-      <!-- * Signature -->
-      <div class="row">
-        <div class="col-12">
-          <div class="row p-2 border border-dark border-bottom-0">
-            <div class="col-12 col-md-6">
-              <div class="row">
-                <div class="col-12 col-sm-6 d-flex justify-content-center">
-                  <h6 class="mb-1 m-md-0">
-                    <span
-                      class="badge bg-secondary signature"
-                      data-bs-toggle="modal"
-                      data-bs-target="#signatureCapEquipeRecevante"
-                    >
-                      signateur cap eq recevante
-                    </span>
-                  </h6>
-                </div>
-                <div class="col-12 col-sm-6 d-flex justify-content-center">
-                  <h6 class="mb-1 m-md-0">
-                    <span
-                      class="badge bg-secondary signature"
-                      data-bs-toggle="modal"
-                      data-bs-target="#signatureCapEquipeVisiteuse"
-                    >
-                      signateur cap eq visiteuse
-                    </span>
-                  </h6>
+        <!-- ! Reserve techniques -->
+        <!-- * Avertisement -->
+        <div class="row">
+          <div class="col-12 col-sm-6 border border-dark">
+            <h5 class="text-center">Joueurs ou accompagnateurs avertis</h5>
+            <hr />
+            <div class="d-flex">
+              <h6>-- :</h6>
+              &nbsp;&nbsp;
+              <h6 class="ajouter me-1 ms-auto">
+                <span class="badge bg-secondary" id="ajouter-joueur-averti-recevante">
+                  Ajouter
+                </span>
+              </h6>
+              <h6 class="ajouter">
+                <span class="badge bg-secondary" id="supprimer-joueur-averti-recevante">
+                  Supprimer
+                </span>
+              </h6>
+            </div>
+            <div class="row mt-2">
+              <div class="col-12" id="joueurs-averti-recevante">
+                <div
+                  class="row border border-dark avertisement mb-1 mx-1 d-none"
+                  id="head-joueurs-averti-recevante"
+                >
+                  <div
+                    class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                  >
+                    N°
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                  >
+                    Nom et prénom
+                  </div>
+                  <div
+                    class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                  >
+                    Licence
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="row">
-                <div class="col-12 col-sm-6 d-flex justify-content-center">
-                  <h6 class="mb-1 m-md-0">
-                    <span
-                      class="badge bg-secondary signature"
-                      data-bs-toggle="modal"
-                      data-bs-target="#signatureArbitre"
-                    >
-                      signateur arbitre
-                    </span>
-                  </h6>
-                </div>
-                <div class="col-12 col-sm-6 d-flex justify-content-center">
-                  <h6 class="mb-1 m-md-0">
-                    <span
-                      class="badge bg-secondary signature"
-                      data-bs-toggle="modal"
-                      data-bs-target="#signatureComissaire"
-                    >
-                      signateur comissaire
-                    </span>
-                  </h6>
+            <hr />
+            <div class="d-flex">
+              <h6>-- :</h6>
+              &nbsp;&nbsp;
+              <h6 class="ajouter me-1 ms-auto">
+                <span class="badge bg-secondary" id="ajouter-joueur-averti-visiteuse">
+                  Ajouter <i class="fa-solid fa-plus"></i>
+                </span>
+              </h6>
+              <h6 class="ajouter">
+                <span class="badge bg-secondary" id="supprimer-joueur-averti-visiteuse"
+                  >Supprimer</span
+                >
+              </h6>
+            </div>
+            <div class="row mt-2">
+              <div class="col-12" id="joueurs-averti-visiteuse">
+                <div
+                  class="row border border-dark avertisement mb-1 mx-1 d-none"
+                  id="head-joueurs-averti-visiteuse"
+                >
+                  <div
+                    class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                  >
+                    N°
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                  >
+                    Nom et prénom
+                  </div>
+                  <div
+                    class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                  >
+                    Licence
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 border border-dark">
-          <div class="row my-2">
-            <div class="col-12 col-md-6 d-flex justify-content-center">
-              <span class="my-auto text-center"> S. Capitaine éq. recevante : </span>
-            </div>
-            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                title="Double click pour signer"
-                class="img-fluid signature-img"
-                id="signatureCapEquipeRecevanteImg"
-              />
-            </div>
-          </div>
-          <hr />
-          <div class="row my-2">
-            <div class="col-12 col-md-6 d-flex justify-content-center">
-              <span class="my-auto text-center"> S. Capitaine éq. visiteuse : </span>
-            </div>
+          <div class="col-12 col-sm-6 border border-dark">
+            <h5 class="text-center">Joueurs ou accompagnateurs explus</h5>
 
-            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                title="Double click pour signer"
-                class="img-fluid signature-img"
-                id="signatureCapEquipeVisiteuseImg"
-              />
+            <hr />
+            <div class="d-flex">
+              <h6>-- :</h6>
+              &nbsp;&nbsp;
+              <h6 class="ajouter me-1 ms-auto">
+                <span class="badge bg-secondary" id="ajouter-joueur-explu-recevante">
+                  Ajouter <i class="fa-solid fa-plus"></i>
+                </span>
+              </h6>
+              <h6 class="ajouter">
+                <span class="badge bg-secondary" id="supprimer-joueur-explu-recevante"
+                  >Supprimer</span
+                >
+              </h6>
+            </div>
+            <div class="row mt-2">
+              <div class="col-12" id="joueurs-explu-recevante">
+                <div
+                  class="row border border-dark avertisement mb-1 mx-1 d-none"
+                  id="head-joueurs-explu-recevante"
+                >
+                  <div
+                    class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                  >
+                    N°
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                  >
+                    Nom et prénom
+                  </div>
+                  <div
+                    class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                  >
+                    Licence
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="d-flex">
+              <h6>-- :</h6>
+              &nbsp;&nbsp;
+              <h6 class="ajouter me-1 ms-auto">
+                <span class="badge bg-secondary" id="ajouter-joueur-explu-visiteuse">
+                  Ajouter <i class="fa-solid fa-plus"></i>
+                </span>
+              </h6>
+              <h6 class="ajouter">
+                <span class="badge bg-secondary" id="supprimer-joueur-explu-visiteuse"
+                  >Supprimer</span
+                >
+              </h6>
+            </div>
+            <div class="row mt-2">
+              <div class="col-12" id="joueurs-explu-visiteuse">
+                <div
+                  class="row border border-dark avertisement mb-1 mx-1 d-none"
+                  id="head-joueurs-explu-visiteuse"
+                >
+                  <div
+                    class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                  >
+                    N°
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                  >
+                    Nom et prénom
+                  </div>
+                  <div
+                    class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                  >
+                    Licence
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 border border-dark">
-          <div class="row my-2">
-            <div class="col-12 col-md-6 d-flex justify-content-center">
-              <span class="my-auto text-center"> Signature arbitre : </span>
+        <!-- ! Avertisement -->
+        <!-- * Joueurs blessés -->
+        <div class="row">
+          <div class="col-12 border border-dark border-bottom-0">
+            <h5 class="text-center">Joueurs blesses</h5>
+          </div>
+          <div class="col-12 col-md-6 border border-dark">
+            <div class="d-flex mt-1">
+              <h6>-- :</h6>
+              &nbsp;&nbsp;
+              <h6 class="ajouter me-1 ms-auto">
+                <span class="badge bg-secondary" id="ajouter-joueur-blesses-recevante">
+                  Ajouter <i class="fa-solid fa-plus"></i>
+                </span>
+              </h6>
+              <h6 class="ajouter">
+                <span class="badge bg-secondary" id="supprimer-joueur-blesses-recevante"
+                  >Supprimer</span
+                >
+              </h6>
             </div>
+            <div class="row mt-2">
+              <div class="col-12" id="joueurs-blesses-recevante">
+                <div
+                  class="row border border-dark avertisement mb-1 mx-1 d-none"
+                  id="head-joueurs-blesses-recevante"
+                >
+                  <div
+                    class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                  >
+                    N°
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                  >
+                    Nom et prénom
+                  </div>
+                  <div
+                    class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                  >
+                    Licence
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 border border-dark">
+            <div class="d-flex mt-1">
+              <h6>-- :</h6>
+              &nbsp;&nbsp;
+              <h6 class="ajouter me-1 ms-auto">
+                <span class="badge bg-secondary" id="ajouter-joueur-blesses-visiteuse">
+                  Ajouter <i class="fa-solid fa-plus"></i>
+                </span>
+              </h6>
+              <h6 class="ajouter">
+                <span class="badge bg-secondary" id="supprimer-joueur-blesses-visiteuse"
+                  >Supprimer</span
+                >
+              </h6>
+            </div>
+            <div class="row mt-2">
+              <div class="col-12" id="joueurs-blesses-visiteuse">
+                <div
+                  class="row border border-dark avertisement mb-1 mx-1 d-none"
+                  id="head-joueurs-blesses-visiteuse"
+                >
+                  <div
+                    class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
+                  >
+                    N°
+                  </div>
+                  <div
+                    class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
+                  >
+                    Nom et prénom
+                  </div>
+                  <div
+                    class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
+                  >
+                    Licence
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Joueurs blessés -->
+        <!-- * Arbitres et commisaire -->
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-md-3 border border-dark">
+                <div class="row">
+                  <div class="col-6">
+                    <h6>Fonction</h6>
+                  </div>
+                  <div class="col-6" dir="rtl">
+                    <h6>المهمة</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-5 border border-dark">
+                <div class="row">
+                  <div class="col-6">
+                    <h6>Nom et Prénom</h6>
+                  </div>
+                  <div class="col-6" dir="rtl">
+                    <h6>الإسم و النسب</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 border border-dark">
+                <div class="row">
+                  <div class="col-6">
+                    <h6>Signature</h6>
+                  </div>
+                  <div class="col-6" dir="rtl">
+                    <h6>التوقيع</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arbitres">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
+                  <span class="text-center my-auto"> Comissaire de match </span>
+                </div>
+                <div
+                  class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
+                >
+                  <input
+                    type="text"
+                    class="text-center w-100"
+                    placeholder="Nom et prénom"
+                    name="nom-prenom-comissaire-match"
+                    id="nom-prenom-comissaire-match"
+                  />
+                </div>
+                <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    title="Double click pour signer"
+                    class="m-auto img-fluid signature-img"
+                    id="signatureComissaireImg1"
+                    name="signature-comissaire-match"
+                    id="signature-comissaire-match"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
+                  <span class="text-center my-auto"> Arbitre de Centre </span>
+                </div>
+                <div
+                  class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
+                >
+                  <input
+                    type="text"
+                    class="text-center w-100"
+                    placeholder="Nom et prénom"
+                    name="nom-prenom-arbitre-match"
+                    id="nom-prenom-arbitre-match"
+                  />
+                </div>
+                <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    title="Double click pour signer"
+                    class="m-auto img-fluid signature-img"
+                    id="signatureArbitreImg1"
+                    name="signature-arbitre-match"
+                    id="signature-arbitre-match"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
+                  <span class="text-center my-auto"> 1èr Assistant </span>
+                </div>
+                <div
+                  class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
+                >
+                  <input
+                    type="text"
+                    class="text-center w-100"
+                    placeholder="Nom et prénom"
+                    name="nom-prenom-1assistant-match"
+                    id="nom-prenom-1assistant-match"
+                  />
+                </div>
+                <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    title="Double click pour signer"
+                    class="m-auto img-fluid signature-img"
+                    id="signature1AssistantImg"
+                    name="signature-1assistant-match"
+                    id="signature-1assistant-match"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
+                  <span class="text-center my-auto"> 2ème Assistant </span>
+                </div>
+                <div
+                  class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
+                >
+                  <input
+                    type="text"
+                    class="text-center w-100"
+                    placeholder="Nom et prénom"
+                    name="nom-prenom-2assistant-match"
+                    id="nom-prenom-2assistant-match"
+                  />
+                </div>
+                <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    title="Double click pour signer"
+                    class="m-auto img-fluid signature-img"
+                    id="signature2AssistantImg"
+                    name="signature-2assistant-match"
+                    id="signature-2assistant-match"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
+                  <span class="text-center my-auto"> 4ème Officiel </span>
+                </div>
+                <div
+                  class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
+                >
+                  <input
+                    type="text"
+                    class="text-center w-100"
+                    placeholder="Nom et prénom"
+                    name="nom-prenom-4officiel-match"
+                    id="nom-prenom-4officiel-match"
+                  />
+                </div>
+                <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    title="Double click pour signer"
+                    class="m-auto img-fluid signature-img"
+                    id="signature4OfficielImg"
+                    name="signature-4officiel-match"
+                    id="signature-4officiel-match"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! Arbitres et commisaire -->
 
-            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                title="Double click pour signer"
-                class="img-fluid signature-img"
-                id="signatureArbitreImg"
-              />
-            </div>
-          </div>
-          <hr />
-          <div class="row my-2">
-            <div class="col-12 col-md-6 d-flex justify-content-center">
-              <span class="my-auto text-center"> Signature comissaire : </span>
-            </div>
-            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                title="Double click pour signer"
-                class="img-fluid signature-img"
-                id="signatureComissaireImg"
-              />
+        <!-- //// -->
+        <!-- * All Modals -->
+        <!-- Modal => Signature cap equipe recevante -->
+        <div
+          class="modal fade"
+          id="signatureCapEquipeRecevante"
+          tabindex="-1"
+          aria-labelledby="signatureCapEquipeRecevanteLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signatureCapEquipeRecevanteLabel">
+                  Signature cap equipe recevante
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <canvas
+                    class="img-fluid"
+                    id="signatureCapEquipeRecevanteCanvas"
+                    style="border: 2px solid black"
+                    width="600"
+                    height="150"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary me-auto" id="signatureCapEquipeRecevanteClear">
+                  Effacer
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                  id="signatureCapEquipeRecevanteBtn"
+                >
+                  Confirmer
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Fermer
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Modal => Signature cap equipe visiteuse -->
+        <div
+          class="modal fade"
+          id="signatureCapEquipeVisiteuse"
+          tabindex="-1"
+          aria-labelledby="signatureCapEquipeVisiteuseLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signatureCapEquipeVisiteuseLabel">
+                  Signature cap equipe visiteuse
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <canvas
+                    class="img-fluid"
+                    id="signatureCapEquipeVisiteuseCanvas"
+                    style="border: 2px solid black"
+                    width="600"
+                    height="150"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary me-auto" id="signatureCapEquipeVisiteuseClear">
+                  Effacer
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                  id="signatureCapEquipeVisiteuseBtn"
+                >
+                  Confirmer
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal => Signature arbitre -->
+        <div
+          class="modal fade"
+          id="signatureArbitre"
+          tabindex="-1"
+          aria-labelledby="signatureArbitreLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signatureArbitreLabel">Signature Arbitre de Centre</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <canvas
+                    class="img-fluid"
+                    id="signatureArbitreCanvas"
+                    style="border: 2px solid black"
+                    width="600"
+                    height="150"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary me-auto" id="signatureArbitreClear">
+                  Effacer
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                  id="signatureArbitreBtn"
+                >
+                  Confirmer
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal => Signature comissaire -->
+        <div
+          class="modal fade"
+          id="signatureComissaire"
+          tabindex="-1"
+          aria-labelledby="signatureComissaireLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signatureComissaireLabel">Signature comissaire</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <canvas
+                    class="img-fluid"
+                    id="signatureComissaireCanvas"
+                    style="border: 2px solid black"
+                    width="600"
+                    height="150"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary me-auto" id="signatureComissaireClear">
+                  Effacer
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                  id="signatureComissaireBtn"
+                >
+                  Confirmer
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal => Signature 1 asistant -->
+        <div
+          class="modal fade"
+          id="signature1Assistant"
+          tabindex="-1"
+          aria-labelledby="signature1AssistantLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signature1AssistantLabel">Signature 1èr Assistant</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <canvas
+                    class="img-fluid"
+                    id="signature1AssistantCanvas"
+                    style="border: 2px solid black"
+                    width="600"
+                    height="150"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary me-auto" id="signature1AssistantClear">
+                  Effacer
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                  id="signature1AssistantBtn"
+                >
+                  Confirmer
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal => Signature 2 asistant -->
+        <div
+          class="modal fade"
+          id="signature2Assistant"
+          tabindex="-1"
+          aria-labelledby="signature2AssistantLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signature2AssistantLabel">Signature 2ème Assistant</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <canvas
+                    class="img-fluid"
+                    id="signature2AssistantCanvas"
+                    style="border: 2px solid black"
+                    width="600"
+                    height="150"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary me-auto" id="signature2AssistantClear">
+                  Effacer
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                  id="signature2AssistantBtn"
+                >
+                  Confirmer
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal => Signature 4 officiel -->
+        <div
+          class="modal fade"
+          id="signature4Officiel"
+          tabindex="-1"
+          aria-labelledby="signature4OfficielLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="signature4OfficielLabel">Signature 4 Officiel</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                  <canvas
+                    class="img-fluid"
+                    id="signature4OfficielCanvas"
+                    style="border: 2px solid black"
+                    width="600"
+                    height="150"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary me-auto" id="signature4OfficielClear">
+                  Effacer
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                  id="signature4OfficielBtn"
+                >
+                  Confirmer
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //// -->
+        <!-- ! All Modals -->
       </div>
-      <!-- ! Signature -->
-      <!-- * Reserve techniques -->
-      <div class="row reserve-technique">
-        <div class="col-12">
-          <div class="row">
-            <div class="col-12 col-sm-6 border border-dark">
-              <h5>Reserves sur les questions techniques</h5>
-            </div>
-            <div class="col-12 col-sm-6 border border-dark" dir="rtl">
-              <h5>الإحتجاجات الفنية</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="row border border-dark py-3">
-            <div class="col-6 d-flex justify-content-center align-items-center">
-              <input
-                class="ms-2 form-check-input me-2"
-                type="radio"
-                name="reserve-technique"
-                id="reserve-technique1"
-                value="ras"
-              />
-              <label class="form-check-label" for="flexRadioDefault2"> RAS </label>
-            </div>
-            <div class="col-6 d-flex justify-content-center align-items-center">
-              <input
-                class="ms-2 form-check-input me-2"
-                type="radio"
-                name="reserve-technique"
-                id="reserve-technique2"
-                value="reserve"
-              />
-              <label class="form-check-label" for="flexRadioDefault2"> Reserve </label>
-            </div>
-          </div>
-        </div>
-        <div class="col-12" id="reserve-technique">
-          <div class="row">
-            <div class="col-12 border border-dark reserve-technique-default d-flex">
-              <span class="h2 m-auto text-center text-muted opacity-50">
-                Reserves sur les questions techniques
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ! Reserve techniques -->
-      <!-- * Avertisement -->
-      <div class="row">
-        <div class="col-12 col-sm-6 border border-dark">
-          <h5 class="text-center">Joueurs ou accompagnateurs avertis</h5>
-          <hr />
-          <div class="d-flex">
-            <h6>-- :</h6>
-            &nbsp;&nbsp;
-            <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-averti-recevante"> Ajouter </span>
-            </h6>
-            <h6 class="ajouter">
-              <span class="badge bg-secondary" id="supprimer-joueur-averti-recevante">
-                Supprimer
-              </span>
-            </h6>
-          </div>
-          <div class="row mt-2">
-            <div class="col-12" id="joueurs-averti-recevante">
-              <div
-                class="row border border-dark avertisement mb-1 mx-1 d-none"
-                id="head-joueurs-averti-recevante"
-              >
-                <div
-                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
-                >
-                  N°
-                </div>
-                <div
-                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
-                >
-                  Nom et prénom
-                </div>
-                <div
-                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
-                >
-                  Licence
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="d-flex">
-            <h6>-- :</h6>
-            &nbsp;&nbsp;
-            <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-averti-visiteuse">
-                Ajouter <i class="fa-solid fa-plus"></i>
-              </span>
-            </h6>
-            <h6 class="ajouter">
-              <span class="badge bg-secondary" id="supprimer-joueur-averti-visiteuse"
-                >Supprimer</span
-              >
-            </h6>
-          </div>
-          <div class="row mt-2">
-            <div class="col-12" id="joueurs-averti-visiteuse">
-              <div
-                class="row border border-dark avertisement mb-1 mx-1 d-none"
-                id="head-joueurs-averti-visiteuse"
-              >
-                <div
-                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
-                >
-                  N°
-                </div>
-                <div
-                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
-                >
-                  Nom et prénom
-                </div>
-                <div
-                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
-                >
-                  Licence
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 border border-dark">
-          <h5 class="text-center">Joueurs ou accompagnateurs explus</h5>
-
-          <hr />
-          <div class="d-flex">
-            <h6>-- :</h6>
-            &nbsp;&nbsp;
-            <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-explu-recevante">
-                Ajouter <i class="fa-solid fa-plus"></i>
-              </span>
-            </h6>
-            <h6 class="ajouter">
-              <span class="badge bg-secondary" id="supprimer-joueur-explu-recevante"
-                >Supprimer</span
-              >
-            </h6>
-          </div>
-          <div class="row mt-2">
-            <div class="col-12" id="joueurs-explu-recevante">
-              <div
-                class="row border border-dark avertisement mb-1 mx-1 d-none"
-                id="head-joueurs-explu-recevante"
-              >
-                <div
-                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
-                >
-                  N°
-                </div>
-                <div
-                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
-                >
-                  Nom et prénom
-                </div>
-                <div
-                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
-                >
-                  Licence
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="d-flex">
-            <h6>-- :</h6>
-            &nbsp;&nbsp;
-            <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-explu-visiteuse">
-                Ajouter <i class="fa-solid fa-plus"></i>
-              </span>
-            </h6>
-            <h6 class="ajouter">
-              <span class="badge bg-secondary" id="supprimer-joueur-explu-visiteuse"
-                >Supprimer</span
-              >
-            </h6>
-          </div>
-          <div class="row mt-2">
-            <div class="col-12" id="joueurs-explu-visiteuse">
-              <div
-                class="row border border-dark avertisement mb-1 mx-1 d-none"
-                id="head-joueurs-explu-visiteuse"
-              >
-                <div
-                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
-                >
-                  N°
-                </div>
-                <div
-                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
-                >
-                  Nom et prénom
-                </div>
-                <div
-                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
-                >
-                  Licence
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ! Avertisement -->
-      <!-- * Joueurs blessés -->
-      <div class="row">
-        <div class="col-12 border border-dark border-bottom-0">
-          <h5 class="text-center">Joueurs blesses</h5>
-        </div>
-        <div class="col-12 col-md-6 border border-dark">
-          <div class="d-flex mt-1">
-            <h6>-- :</h6>
-            &nbsp;&nbsp;
-            <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-blesses-recevante">
-                Ajouter <i class="fa-solid fa-plus"></i>
-              </span>
-            </h6>
-            <h6 class="ajouter">
-              <span class="badge bg-secondary" id="supprimer-joueur-blesses-recevante"
-                >Supprimer</span
-              >
-            </h6>
-          </div>
-          <div class="row mt-2">
-            <div class="col-12" id="joueurs-blesses-recevante">
-              <div
-                class="row border border-dark avertisement mb-1 mx-1 d-none"
-                id="head-joueurs-blesses-recevante"
-              >
-                <div
-                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
-                >
-                  N°
-                </div>
-                <div
-                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
-                >
-                  Nom et prénom
-                </div>
-                <div
-                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
-                >
-                  Licence
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 border border-dark">
-          <div class="d-flex mt-1">
-            <h6>-- :</h6>
-            &nbsp;&nbsp;
-            <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-blesses-visiteuse">
-                Ajouter <i class="fa-solid fa-plus"></i>
-              </span>
-            </h6>
-            <h6 class="ajouter">
-              <span class="badge bg-secondary" id="supprimer-joueur-blesses-visiteuse"
-                >Supprimer</span
-              >
-            </h6>
-          </div>
-          <div class="row mt-2">
-            <div class="col-12" id="joueurs-blesses-visiteuse">
-              <div
-                class="row border border-dark avertisement mb-1 mx-1 d-none"
-                id="head-joueurs-blesses-visiteuse"
-              >
-                <div
-                  class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex flex-column text-center border border-dark num-joueur"
-                >
-                  N°
-                </div>
-                <div
-                  class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex flex-column text-center border border-dark nom-joueur"
-                >
-                  Nom et prénom
-                </div>
-                <div
-                  class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex flex-column text-center num-licence"
-                >
-                  Licence
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ! Joueurs blessés -->
-      <!-- * Arbitres et commisaire -->
-      <div class="row">
-        <div class="col-12">
-          <div class="row">
-            <div class="col-6 col-md-3 border border-dark">
-              <div class="row">
-                <div class="col-6">
-                  <h6>Fonction</h6>
-                </div>
-                <div class="col-6" dir="rtl">
-                  <h6>المهمة</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-md-5 border border-dark">
-              <div class="row">
-                <div class="col-6">
-                  <h6>Nom et Prénom</h6>
-                </div>
-                <div class="col-6" dir="rtl">
-                  <h6>الإسم و النسب</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 border border-dark">
-              <div class="row">
-                <div class="col-6">
-                  <h6>Signature</h6>
-                </div>
-                <div class="col-6" dir="rtl">
-                  <h6>التوقيع</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="arbitres">
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
-                <span class="text-center my-auto"> Comissaire de match </span>
-              </div>
-              <div
-                class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
-              >
-                <input type="text" class="text-center w-100" placeholder="Nom et prénom" />
-              </div>
-              <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
-                <img
-                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  title="Double click pour signer"
-                  class="m-auto img-fluid signature-img"
-                  id="signatureComissaireImg1"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
-                <span class="text-center my-auto"> Arbitre de Centre </span>
-              </div>
-              <div
-                class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
-              >
-                <input type="text" class="text-center w-100" placeholder="Nom et prénom" />
-              </div>
-              <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
-                <img
-                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  title="Double click pour signer"
-                  class="m-auto img-fluid signature-img"
-                  id="signatureArbitreImg1"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
-                <span class="text-center my-auto"> 1èr Assistant </span>
-              </div>
-              <div
-                class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
-              >
-                <input type="text" class="text-center w-100" placeholder="Nom et prénom" />
-              </div>
-              <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
-                <img
-                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  title="Double click pour signer"
-                  class="m-auto img-fluid signature-img"
-                  id="signature1AssistantImg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
-                <span class="text-center my-auto"> 2ème Assistant </span>
-              </div>
-              <div
-                class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
-              >
-                <input type="text" class="text-center w-100" placeholder="Nom et prénom" />
-              </div>
-              <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
-                <img
-                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  title="Double click pour signer"
-                  class="m-auto img-fluid signature-img"
-                  id="signature2AssistantImg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
-                <span class="text-center my-auto"> 4ème Officiel </span>
-              </div>
-              <div
-                class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
-              >
-                <input type="text" class="text-center w-100" placeholder="Nom et prénom" />
-              </div>
-              <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
-                <img
-                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  title="Double click pour signer"
-                  class="m-auto img-fluid signature-img"
-                  id="signature4OfficielImg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ! Arbitres et commisaire -->
-      <!-- //// -->
-      <!-- * All Modals -->
-      <!-- Modal => Signature cap equipe recevante -->
-      <div
-        class="modal fade"
-        id="signatureCapEquipeRecevante"
-        tabindex="-1"
-        aria-labelledby="signatureCapEquipeRecevanteLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signatureCapEquipeRecevanteLabel">
-                Signature cap equipe recevante
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center align-items-center flex-column">
-                <canvas
-                  class="img-fluid"
-                  id="signatureCapEquipeRecevanteCanvas"
-                  style="border: 2px solid black"
-                  width="600"
-                  height="150"
-                ></canvas>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary me-auto" id="signatureCapEquipeRecevanteClear">
-                Effacer
-              </button>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-dismiss="modal"
-                id="signatureCapEquipeRecevanteBtn"
-              >
-                Confirmer
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal => Signature cap equipe visiteuse -->
-      <div
-        class="modal fade"
-        id="signatureCapEquipeVisiteuse"
-        tabindex="-1"
-        aria-labelledby="signatureCapEquipeVisiteuseLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signatureCapEquipeVisiteuseLabel">
-                Signature cap equipe visiteuse
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center align-items-center flex-column">
-                <canvas
-                  class="img-fluid"
-                  id="signatureCapEquipeVisiteuseCanvas"
-                  style="border: 2px solid black"
-                  width="600"
-                  height="150"
-                ></canvas>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary me-auto" id="signatureCapEquipeVisiteuseClear">
-                Effacer
-              </button>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-dismiss="modal"
-                id="signatureCapEquipeVisiteuseBtn"
-              >
-                Confirmer
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal => Signature arbitre -->
-      <div
-        class="modal fade"
-        id="signatureArbitre"
-        tabindex="-1"
-        aria-labelledby="signatureArbitreLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signatureArbitreLabel">Signature Arbitre de Centre</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center align-items-center flex-column">
-                <canvas
-                  class="img-fluid"
-                  id="signatureArbitreCanvas"
-                  style="border: 2px solid black"
-                  width="600"
-                  height="150"
-                ></canvas>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary me-auto" id="signatureArbitreClear">Effacer</button>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-dismiss="modal"
-                id="signatureArbitreBtn"
-              >
-                Confirmer
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal => Signature comissaire -->
-      <div
-        class="modal fade"
-        id="signatureComissaire"
-        tabindex="-1"
-        aria-labelledby="signatureComissaireLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signatureComissaireLabel">Signature comissaire</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center align-items-center flex-column">
-                <canvas
-                  class="img-fluid"
-                  id="signatureComissaireCanvas"
-                  style="border: 2px solid black"
-                  width="600"
-                  height="150"
-                ></canvas>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary me-auto" id="signatureComissaireClear">
-                Effacer
-              </button>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-dismiss="modal"
-                id="signatureComissaireBtn"
-              >
-                Confirmer
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal => Signature 1 asistant -->
-      <div
-        class="modal fade"
-        id="signature1Assistant"
-        tabindex="-1"
-        aria-labelledby="signature1AssistantLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signature1AssistantLabel">Signature 1èr Assistant</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center align-items-center flex-column">
-                <canvas
-                  class="img-fluid"
-                  id="signature1AssistantCanvas"
-                  style="border: 2px solid black"
-                  width="600"
-                  height="150"
-                ></canvas>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary me-auto" id="signature1AssistantClear">
-                Effacer
-              </button>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-dismiss="modal"
-                id="signature1AssistantBtn"
-              >
-                Confirmer
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal => Signature 2 asistant -->
-      <div
-        class="modal fade"
-        id="signature2Assistant"
-        tabindex="-1"
-        aria-labelledby="signature2AssistantLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signature2AssistantLabel">Signature 2ème Assistant</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center align-items-center flex-column">
-                <canvas
-                  class="img-fluid"
-                  id="signature2AssistantCanvas"
-                  style="border: 2px solid black"
-                  width="600"
-                  height="150"
-                ></canvas>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary me-auto" id="signature2AssistantClear">
-                Effacer
-              </button>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-dismiss="modal"
-                id="signature2AssistantBtn"
-              >
-                Confirmer
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal => Signature 4 officiel -->
-      <div
-        class="modal fade"
-        id="signature4Officiel"
-        tabindex="-1"
-        aria-labelledby="signature4OfficielLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signature4OfficielLabel">Signature 4 Officiel</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="d-flex justify-content-center align-items-center flex-column">
-                <canvas
-                  class="img-fluid"
-                  id="signature4OfficielCanvas"
-                  style="border: 2px solid black"
-                  width="600"
-                  height="150"
-                ></canvas>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-secondary me-auto" id="signature4OfficielClear">
-                Effacer
-              </button>
-              <button
-                type="button"
-                class="btn btn-dark"
-                data-bs-dismiss="modal"
-                id="signature4OfficielBtn"
-              >
-                Confirmer
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- //// -->
-      <!-- ! All Modals -->
-    </div>
+    </form>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
