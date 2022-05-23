@@ -36,28 +36,28 @@ $(document).ready(function () {
     $(`#accompagnanteurs-${type}`).html("");
     for (let i = 0; i < nombre; i++) {
       $(`#accompagnanteurs-${type}`).append(`
-                <div ${i == 10 ? "class=mb-2" : ""}>
-                    <div class="row border border-dark">
-                        <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur" >
-                        <div class="row">
-                          <div class="col-3">
-                            <div class="row">
-                              <div class="col-12 text-muted">
-                                ${i + 1}&nbsp;•
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-9"><input type="number" class="w-100 text-center" placeholder="Fonction ..." /></div>
-                        </div>
-                        </div>
-                        <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur" >
-                            <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." />
-                        </div>
-                        <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
-                            <input type="text" class="w-100 text-center" placeholder="Licence..."/>
-                        </div>
+        <div ${i == 10 ? "class=mb-2" : ""}>
+            <div class="row border border-dark">
+                <div class="col-4 col-lg-3 p-1 order-0 order-lg-0 d-flex border border-dark num-joueur" >
+                <div class="row">
+                  <div class="col-3">
+                    <div class="row">
+                      <div class="col-12 text-muted">
+                        ${i + 1}&nbsp;•
+                      </div>
                     </div>
-                </div>`);
+                  </div>
+                  <div class="col-9"><input type="number" class="w-100 text-center" placeholder="Fonction ..." /></div>
+                </div>
+                </div>
+                <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur" >
+                    <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." />
+                </div>
+                <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
+                    <input type="text" class="w-100 text-center" placeholder="Licence..."/>
+                </div>
+            </div>
+        </div>`);
     }
   }
 

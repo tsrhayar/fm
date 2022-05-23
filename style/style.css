@@ -75,6 +75,7 @@ canvas {
   width: 200px;
   height: 50px;
   cursor: pointer;
+  border: 1px solid #4d4d4d;
 }
 
 @media (max-width: 1000px) {
