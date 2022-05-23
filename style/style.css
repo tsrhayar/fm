@@ -12,6 +12,7 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.arbitres > div:nth-child(even) > div,
 .accompagnanteurs-recevante > div:nth-child(even) > div,
 .accompagnanteurs-visiteuse > div:nth-child(odd) > div,
 .joueurs-recevante > div:nth-child(even) > div,
@@ -50,9 +51,23 @@ input[type="number"]::-webkit-outer-spin-button {
   min-height: 150px;
 }
 
+canvas {
+  border: 1px solid grey;
+}
+
+.signature,
 .ajouter {
   cursor: pointer;
   user-select: none;
+}
+
+.signature {
+  width: 180px;
+}
+
+.signature-img {
+  width: 200px;
+  height: 50px;
 }
 
 @media (max-width: 1000px) {

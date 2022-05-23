@@ -10,17 +10,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
     <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container-xl mb-5">
+    <div class="container-xl mb-5 mt-1">
       <!-- * Header -->
       <div class="row">
         <div class="col-12 col-md-4 text-center">
           <h6>الجامعة الملكية المغربية لكرة القدم</h6>
           <h6>Fédération royale marocaine de football</h6>
-          <img src="./img/logo-frmf.png" class="frmf-logo" />
+          <img src="./img/logo-frmf.png" class="img-fluid frmf-logo" />
           <br />
           <input type="number" class="text-center mt-1" placeholder="Code de match .." />
         </div>
@@ -322,38 +323,112 @@
       <!-- ! Reserve qualification -->
       <!-- * Signature -->
       <div class="row">
-        <div class="col-12 col-sm-6 border border-dark">
-          <div class="row my-2">
-            <div class="col-8 col-md-6 text-nowrap">S. Capitaine éq. recevante :</div>
-            <div class="col-4 col-md-6"><button class="btn btn-secondary">Signer</button></div>
-          </div>
-          <div class="row">
-            <img src="https://via.placeholder.com/400x50" />
-          </div>
-          <hr />
-          <div class="row mb-2">
-            <div class="col-8 col-md-6 text-nowrap">S. Capitaine éq. visiteuse :</div>
-            <div class="col-4 col-md-6"><button class="btn btn-secondary">Signer</button></div>
-          </div>
-          <div class="row">
-            <img src="https://via.placeholder.com/400x50" />
+        <div class="col-12">
+          <div class="row p-2 border border-dark border-bottom-0">
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                  <h6 class="mb-1 m-md-0">
+                    <span
+                      class="badge bg-secondary signature"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signatureCapEquipeRecevante"
+                    >
+                      signateur cap eq recevante
+                    </span>
+                  </h6>
+                </div>
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                  <h6 class="mb-1 m-md-0">
+                    <span
+                      class="badge bg-secondary signature"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signatureCapEquipeVisiteuse"
+                    >
+                      signateur cap eq visiteuse
+                    </span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                  <h6 class="mb-1 m-md-0">
+                    <span
+                      class="badge bg-secondary signature"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signatureArbitre"
+                    >
+                      signateur arbitre
+                    </span>
+                  </h6>
+                </div>
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                  <h6 class="mb-1 m-md-0">
+                    <span
+                      class="badge bg-secondary signature"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signatureComissaire"
+                    >
+                      signateur comissaire
+                    </span>
+                  </h6>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col-12 col-sm-6 border border-dark">
           <div class="row my-2">
-            <div class="col-8 col-md-6 text-nowrap">Signature arbitre :</div>
-            <div class="col-4 col-md-6"><button class="btn btn-secondary">Signer</button></div>
-          </div>
-          <div class="row">
-            <img src="https://via.placeholder.com/400x50" />
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+              <span class="my-auto text-center"> S. Capitaine éq. recevante : </span>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+              <img
+                src="https://via.placeholder.com/200x50"
+                class="img-fluid signature-img"
+                id="signatureCapEquipeRecevanteImg"
+              />
+            </div>
           </div>
           <hr />
-          <div class="row mb-2">
-            <div class="col-8 col-md-6 text-nowrap">Signature commisaire :</div>
-            <div class="col-4 col-md-6"><button class="btn btn-secondary">Signer</button></div>
+          <div class="row my-2">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+              <span class="my-auto text-center"> S. Capitaine éq. visiteuse : </span>
+            </div>
+
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+              <img
+                src="https://via.placeholder.com/200x50"
+                class="img-fluid signature-img"
+                id="signatureCapEquipeVisiteuseImg"
+              />
+            </div>
           </div>
-          <div class="row">
-            <img src="https://via.placeholder.com/400x50" />
+        </div>
+        <div class="col-12 col-sm-6 border border-dark">
+          <div class="row my-2">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+              <span class="my-auto text-center"> Signature arbitre : </span>
+            </div>
+
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+              <img src="https://via.placeholder.com/200x50" class="img-fluid signature-img" id="signatureArbitreImg" />
+            </div>
+          </div>
+          <hr />
+          <div class="row my-2">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+              <span class="my-auto text-center"> Signature comissaire : </span>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+              <img
+                src="https://via.placeholder.com/200x50"
+                class="img-fluid signature-img"
+                id="signatureComissaireImg"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -412,10 +487,10 @@
             <h6>-- :</h6>
             &nbsp;&nbsp;
             <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-averti-recevante">Ajouter </span>
+              <span class="badge bg-secondary" id="ajouter-joueur-averti-recevante"> Ajouter </span>
             </h6>
             <h6 class="ajouter">
-              <span class="badge bg-secondary" id="supprimer-joueur-averti-recevante">Supprimer</span>
+              <span class="badge bg-secondary" id="supprimer-joueur-averti-recevante"> Supprimer </span>
             </h6>
           </div>
           <div class="row mt-2">
@@ -442,9 +517,9 @@
             <h6>-- :</h6>
             &nbsp;&nbsp;
             <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-averti-visiteuse"
-                >Ajouter <i class="fa-solid fa-plus"></i
-              ></span>
+              <span class="badge bg-secondary" id="ajouter-joueur-averti-visiteuse">
+                Ajouter <i class="fa-solid fa-plus"></i>
+              </span>
             </h6>
             <h6 class="ajouter">
               <span class="badge bg-secondary" id="supprimer-joueur-averti-visiteuse">Supprimer</span>
@@ -478,9 +553,9 @@
             <h6>-- :</h6>
             &nbsp;&nbsp;
             <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-explu-recevante"
-                >Ajouter <i class="fa-solid fa-plus"></i
-              ></span>
+              <span class="badge bg-secondary" id="ajouter-joueur-explu-recevante">
+                Ajouter <i class="fa-solid fa-plus"></i>
+              </span>
             </h6>
             <h6 class="ajouter">
               <span class="badge bg-secondary" id="supprimer-joueur-explu-recevante">Supprimer</span>
@@ -510,9 +585,9 @@
             <h6>-- :</h6>
             &nbsp;&nbsp;
             <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-explu-visiteuse"
-                >Ajouter <i class="fa-solid fa-plus"></i
-              ></span>
+              <span class="badge bg-secondary" id="ajouter-joueur-explu-visiteuse">
+                Ajouter <i class="fa-solid fa-plus"></i>
+              </span>
             </h6>
             <h6 class="ajouter">
               <span class="badge bg-secondary" id="supprimer-joueur-explu-visiteuse">Supprimer</span>
@@ -550,9 +625,9 @@
             <h6>-- :</h6>
             &nbsp;&nbsp;
             <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-blesses-recevante"
-                >Ajouter <i class="fa-solid fa-plus"></i
-              ></span>
+              <span class="badge bg-secondary" id="ajouter-joueur-blesses-recevante">
+                Ajouter <i class="fa-solid fa-plus"></i>
+              </span>
             </h6>
             <h6 class="ajouter">
               <span class="badge bg-secondary" id="supprimer-joueur-blesses-recevante">Supprimer</span>
@@ -583,9 +658,9 @@
             <h6>-- :</h6>
             &nbsp;&nbsp;
             <h6 class="ajouter me-1 ms-auto">
-              <span class="badge bg-secondary" id="ajouter-joueur-blesses-visiteuse"
-                >Ajouter <i class="fa-solid fa-plus"></i
-              ></span>
+              <span class="badge bg-secondary" id="ajouter-joueur-blesses-visiteuse">
+                Ajouter <i class="fa-solid fa-plus"></i>
+              </span>
             </h6>
             <h6 class="ajouter">
               <span class="badge bg-secondary" id="supprimer-joueur-blesses-visiteuse">Supprimer</span>
@@ -617,29 +692,205 @@
       <div class="row">
         <div class="col-12">
           <div class="row">
-            <div class="col-6 order-1 col-md-3 border border-dark">
+            <div class="col-6 col-md-3 border border-dark">
               <div class="row">
-                <div class="col-6">Fonction</div>
-                <div class="col-6" dir="rtl">المهمة</div>
+                <div class="col-6">
+                  <h6>Fonction</h6>
+                </div>
+                <div class="col-6" dir="rtl">
+                  <h6>المهمة</h6>
+                </div>
               </div>
             </div>
-            <div class="col-12 order-3 order-md-2 col-md-6 border border-dark">
+            <div class="col-6 col-md-5 border border-dark">
               <div class="row">
-                <div class="col-6">Nom et Prénom</div>
-                <div class="col-6" dir="rtl">الإسم و النسب</div>
+                <div class="col-6">
+                  <h6>Nom et Prénom</h6>
+                </div>
+                <div class="col-6" dir="rtl">
+                  <h6>الإسم و النسب</h6>
+                </div>
               </div>
             </div>
-            <div class="col-6 order-2 order-md-3 col-md-3 border border-dark">
+            <div class="col-12 col-md-4 border border-dark">
               <div class="row">
-                <div class="col-6">Signature</div>
-                <div class="col-6" dir="rtl">التوقيع</div>
+                <div class="col-6">
+                  <h6>Signature</h6>
+                </div>
+                <div class="col-6" dir="rtl">
+                  <h6>التوقيع</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arbitres">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6 col-md-3 d-flex border border-dark border-top-0">
+                <span class="text-center my-auto"> Comissaire de match </span>
+              </div>
+              <div
+                class="col-6 col-md-5 d-flex justify-content-center align-items-center p-1 col-md-5 border border-dark border-top-0"
+              >
+                <input type="text" class="text-center w-100" placeholder="Nom et prénom" />
+              </div>
+              <div class="col-12 col-md-4 py-1 d-flex border border-dark border-top-0">
+                <img src="https://via.placeholder.com/200x50" class="m-auto img-fluid" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- ! Arbitres et commisaire -->
+      <!-- //// -->
+      <!-- * All Modals -->
+      <!-- Modal => Signature cap equipe recevante -->
+      <div
+        class="modal fade"
+        id="signatureCapEquipeRecevante"
+        tabindex="-1"
+        aria-labelledby="signatureCapEquipeRecevanteLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signatureCapEquipeRecevanteLabel">Signature cap equipe recevante</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <canvas
+                  id="signatureCapEquipeRecevanteCanvas"
+                  style="border: 2px solid black"
+                  width="600"
+                  height="150"
+                ></canvas>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary me-auto" id="signatureCapEquipeRecevanteClear">Effacer</button>
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="signatureCapEquipeRecevanteBtn">
+                Confirmer
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal => Signature cap equipe visiteuse -->
+      <div
+        class="modal fade"
+        id="signatureCapEquipeVisiteuse"
+        tabindex="-1"
+        aria-labelledby="signatureCapEquipeVisiteuseLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signatureCapEquipeVisiteuseLabel">Signature cap equipe visiteuse</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <canvas
+                  id="signatureCapEquipeVisiteuseCanvas"
+                  style="border: 2px solid black"
+                  width="600"
+                  height="150"
+                ></canvas>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary me-auto" id="signatureCapEquipeVisiteuseClear">Effacer</button>
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="signatureCapEquipeVisiteuseBtn">
+                Confirmer
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal => Signature arbitre -->
+      <div
+        class="modal fade"
+        id="signatureArbitre"
+        tabindex="-1"
+        aria-labelledby="signatureArbitreLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signatureArbitreLabel">Signature comissaire</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <canvas id="signatureArbitreCanvas" style="border: 2px solid black" width="600" height="150"></canvas>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary me-auto" id="signatureArbitreClear">Effacer</button>
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="signatureArbitreBtn">
+                Confirmer
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal => Signature comissaire -->
+      <div
+        class="modal fade"
+        id="signatureComissaire"
+        tabindex="-1"
+        aria-labelledby="signatureComissaireLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signatureComissaireLabel">Signature comissaire</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center align-items-center flex-column">
+                <canvas
+                  id="signatureComissaireCanvas"
+                  style="border: 2px solid black"
+                  width="600"
+                  height="150"
+                ></canvas>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary me-auto" id="signatureComissaireClear">Effacer</button>
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal" id="signatureComissaireBtn">
+                Confirmer
+              </button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //// -->
+      <!-- ! All Modals -->
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./javascript/index.js"></script>
   </body>
