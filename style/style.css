@@ -2,6 +2,10 @@ body {
   min-width: 300px;
 }
 
+* {
+  user-select: none;
+}
+
 .frmf-logo {
   width: 100px;
   filter: grayscale(1);
@@ -29,7 +33,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .ras-reserve-recevante,
 .ras-reserve-visiteuse {
-  background-image: radial-gradient(#858585 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%);
+  background-image: radial-gradient(#858585 20%, transparent 20%),
+    radial-gradient(#fafafa 20%, transparent 20%);
   background-color: #ffffff;
   background-position: 0 0, 50px 50px;
   background-size: 5px 5px;
@@ -44,7 +49,8 @@ input[type="number"]::-webkit-outer-spin-button {
 /* // */
 
 .reserve-technique-default {
-  background-image: radial-gradient(#858585 20%, transparent 20%), radial-gradient(#fafafa 20%, transparent 20%);
+  background-image: radial-gradient(#858585 20%, transparent 20%),
+    radial-gradient(#fafafa 20%, transparent 20%);
   background-color: #ffffff;
   background-position: 0 0, 50px 50px;
   background-size: 5px 5px;
@@ -68,6 +74,7 @@ canvas {
 .signature-img {
   width: 200px;
   height: 50px;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
