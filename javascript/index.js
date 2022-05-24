@@ -13,17 +13,25 @@ $(document).ready(function () {
                           ${i + 1}&nbsp;•
                         </div>
                         <div class="col-7">
-                          <input class="ms-2 form-check-input me-2" type="radio" name="captitaine-${type}" id="captitaine-${type}" value=${i + 1}></div>
+                          <input class="ms-2 form-check-input me-2" type="radio" name="captitaine-${type}" id="captitaine-${type}" value=${
+        i + 1
+      }></div>
                         </div>
                       </div>
-                    <div class="col-7 col-sm-6 col-md-8 col-lg-6"><input type="number" class="w-100 text-center" placeholder="N°..." name="num-j-eq-${type}-${i + 1}" id="num-j-eq-${type}-${i + 1}"/></div>
+                    <div class="col-7 col-sm-6 col-md-8 col-lg-6"><input type="number" class="w-100 text-center" placeholder="N°..." name="num-j-eq-${type}-${
+        i + 1
+      }" id="num-j-eq-${type}-${i + 1}"/></div>
                   </div>
               </div>
               <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur" >
-                  <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." name="nom-prenom-j-eq-${type}-${i + 1}" id="nom-prenom-j-eq-${type}-${i + 1}"/>
+                  <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." name="nom-prenom-j-eq-${type}-${
+        i + 1
+      }" id="nom-prenom-j-eq-${type}-${i + 1}"/>
               </div>
               <div class="col-6 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
-                  <input type="text" class="w-100 text-center" placeholder="Licence..." name="licence-j-eq-${type}-${i + 1}" id="licence-j-eq-${type}-${i + 1}"/>
+                  <input type="text" class="w-100 text-center" placeholder="Licence..." name="licence-j-eq-${type}-${
+        i + 1
+      }" id="licence-j-eq-${type}-${i + 1}"/>
               </div>
           </div>
       </div>`);
@@ -47,14 +55,20 @@ $(document).ready(function () {
                       </div>
                     </div>
                   </div>
-                  <div class="col-9"><input type="number" class="w-100 text-center" placeholder="Fonction ..." name="fonction-acc-eq-${type}-${i + 1}" id="fonction-acc-eq-${type}-${i + 1}"/></div>
+                  <div class="col-9"><input type="number" class="w-100 text-center" placeholder="Fonction ..." name="fonction-acc-eq-${type}-${
+        i + 1
+      }" id="fonction-acc-eq-${type}-${i + 1}"/></div>
                 </div>
                 </div>
                 <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 d-flex border border-dark flex-column nom-joueur" >
-                    <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." name="nom-prenom-acc-eq-${type}-${i + 1}" id="nom-prenom-acc-eq-${type}-${i + 1}"/>
+                    <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." name="nom-prenom-acc-eq-${type}-${
+        i + 1
+      }" id="nom-prenom-acc-eq-${type}-${i + 1}"/>
                 </div>
                 <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 d-flex num-licence">
-                    <input type="text" class="w-100 text-center" placeholder="Licence..." name="licence-acc-eq-${type}-${i + 1}" id="licence-acc-eq-${type}-${i + 1}"/>
+                    <input type="text" class="w-100 text-center" placeholder="Licence..." name="licence-acc-eq-${type}-${
+        i + 1
+      }" id="licence-acc-eq-${type}-${i + 1}"/>
                 </div>
             </div>
         </div>`);
@@ -80,7 +94,9 @@ function rasOrReserve(name) {
       </div>`);
     } else if ($(this).val() == "reserve") {
       $(`#${name}`).html(
-        `<textarea class="w-100 h-100 p-2" name="${name.split('-')[0]}-qualification-${name.split('-')[1]}" rows="10" id="${name.split('-')[0]}-qualification-${name.split('-')[1]}"></textarea>`
+        `<textarea class="w-100 h-100 p-2" name="${name.split("-")[0]}-qualification-${
+          name.split("-")[1]
+        }" rows="10" id="${name.split("-")[0]}-qualification-${name.split("-")[1]}"></textarea>`
       );
     }
 
@@ -134,15 +150,21 @@ function nombreJoueurAvertiOuExplu(type, equipe) {
           <div class="row">
             <div class="col-3 text-center text-muted">${i + 1}•</div>
             <div class="col-9">
-              <input type="number" class="w-100 text-center" placeholder="N°..." />
+              <input type="number" class="w-100 text-center" placeholder="N°..." name="num-joueur-${type}-${equipe}-${
+      i + 1
+    }" />
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-6 p-1 order-2 order-lg-1 border border-dark nom-joueur">
-          <input type="text" class="w-100 text-center" placeholder="Nom et prénom..."/>
+          <input type="text" class="w-100 text-center" placeholder="Nom et prénom..." name="nom-prenom-joueur-${type}-${equipe}-${
+      i + 1
+    }"/>
         </div>
         <div class="col-8 col-lg-3 p-1 order-1 order-lg-2 num-licence">
-          <input type="text" class="w-100 text-center" placeholder="Licence..."/>
+          <input type="text" class="w-100 text-center" placeholder="Licence..." name="licence-joueur-${type}-${equipe}-${
+      i + 1
+    }"/>
         </div>
       </div>
     `);
@@ -202,7 +224,5 @@ nombreJoueurAvertiOuExplu("averti", "recevante");
 nombreJoueurAvertiOuExplu("averti", "visiteuse");
 nombreJoueurAvertiOuExplu("explu", "recevante");
 nombreJoueurAvertiOuExplu("explu", "visiteuse");
-nombreJoueurAvertiOuExplu("blesses", "recevante");
-nombreJoueurAvertiOuExplu("blesses", "visiteuse");
-
-
+nombreJoueurAvertiOuExplu("blesse", "recevante");
+nombreJoueurAvertiOuExplu("blesse", "visiteuse");
